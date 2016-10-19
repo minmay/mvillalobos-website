@@ -1,0 +1,22 @@
+<tr *ngIf="entry.logo">
+	<td colspan="3"><img src="app/resume/images/{{entry.logo}}" border="0" style="height:auto; width:auto; max-width:250px; max-height:50px;"/><p></p></td>
+</tr>
+<tr>
+	<td>{{entry.start}} - {{entry.end}}</td>
+	<td><strong>{{entry.name}}</strong></td>
+	<td>{{entry.location}}</td>
+</tr>
+<tr>
+	<td colspan="3"><strong>{{entry.title}}</strong></td>
+</tr>
+<tr>
+	<td colspan="3">
+		{{entry.prologue}}
+		<ul *ngIf="entry.accomplishments">
+			<li *ngFor="let accomplishment of entry.accomplishments">{{accomplishment}}</li>
+		</ul>
+	</td>
+</tr>
+<tr>
+	<td colspan="3"><hr/></td>
+</tr>
