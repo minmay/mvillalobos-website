@@ -3,7 +3,7 @@ import { ResumeEntry } from './resume-entry.model';
 
 @Component({
     selector: 'resume-entry',
-    templateUrl: 'app/resume/resume-entry.html'
+    templateUrl: 'app/resume/entry/resume-entry.html'
 })
 export class ResumeEntryComponent {
 

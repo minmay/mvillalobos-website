@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { ResumeService } from './resume/resume.service';
 import { Resume } from './resume/resume.model';
-import { ResumeEntry } from './resume/resume-entry.model'
+import { ResumeEntry } from './resume/entry/resume-entry.model'
 
 @Component({
     selector: 'app',

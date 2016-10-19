@@ -1,4 +1,4 @@
-import { ResumeEntry } from './resume-entry.model';
+import { ResumeEntry } from './entry/resume-entry.model';
 
 export interface Affiliation extends ResumeEntry {
 

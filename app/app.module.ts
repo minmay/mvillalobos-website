@@ -6,7 +6,7 @@ import { HttpModule }    from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
-import { ResumeEntryComponent } from './resume/resume-entry.component';
+import { ResumeEntryComponent } from './resume/entry/resume-entry.component';
 import { ResumeService } from './resume/resume.service';
 
 @NgModule({
