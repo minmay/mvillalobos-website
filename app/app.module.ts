@@ -10,7 +10,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { ResumeEntryComponent } from './resume/entry/resume-entry.component';
 import { ResumeService } from './resume/resume.service';
 import { PresentationsComponent } from './resume/presentations/presentations.component'
-import { PresentationComponent } from './resume/presentations/presentation/presentation.component'
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
     imports: [
@@ -24,6 +24,10 @@ import { PresentationComponent } from './resume/presentations/presentation/prese
             {
                 path: 'presentations',
                 component: PresentationsComponent
+            },
+            {
+                path: 'about',
+                component: AboutComponent
             }
         ])
     ],
@@ -32,7 +36,7 @@ import { PresentationComponent } from './resume/presentations/presentation/prese
         ResumeComponent,
         ResumeEntryComponent,
         PresentationsComponent,
-        PresentationComponent
+        AboutComponent
     ],
     providers: [ResumeService],
     bootstrap: [AppComponent]
