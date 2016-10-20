@@ -3,9 +3,36 @@
 </div>
 
 <div class="container">
-	<div class="panel-group" id="presentations" role="tablist" aria-multiselectable="true">
-		<template ngFor let-presentation [ngForOf]="presentations">
-			<presentation *ngIf="presentation" [presentation]="presentation"></presentation>
-		</template>
+
+	<div class="btn-toolbar" role="toolbar" aria-label="toolbar">
+		<div class="btn-group" role="group" aria-label="presentations">
+			<button class="btn btn-default dropdown-toggle" type="button" id="presentations" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Presentations
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="presentations">
+				<li *ngFor="let presentation of presentations" >
+					<a (click)="onSelectPresentation(presentation)">
+						{{presentation.name}}
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div *ngIf="selectedPresentation" class="btn-group" role="group" aria-label="options">
+			<button *ngIf="!selectedPresentation.video" disabled type="button" class="btn btn-default"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Slides</button>
+			<button *ngIf="selectedPresentation.video" type="button" (click)="onSelectSlides()" class="btn btn-default"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Slides</button>
+			<button *ngIf="selectedPresentation.video" (click)="onSelectVideo()" type="button" class="btn btn-default"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Video</button>
+		</div>
+	</div>
+	<p></p>
+	<div *ngIf="selectedPresentation">
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe [src]="mediaUrl" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+		</div>
+	</div>
+	<div *ngIf="!selectedPresentation" class="jumbotron">
+		<div class="jumbotron">
+			<h1>Select a presentation ;)</h1>
+		</div>
 	</div>
 </div>
