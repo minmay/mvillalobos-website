@@ -5,11 +5,40 @@
 	"mobile": "Furnished Upon Request",
 	"history" : [
 		{
+			"name": "Gamblit Gaming, LLC.",
+			"logo": "gamblit.png",
+			"location": "Glendale, CA",
+			"start": "Nov 2015",
+			"end": "Present",
+			"title": "Sr. Software Engineer",
+			"prologue": "I developed software components for land-based table and cabinet regulated gaming systems. These were closed systems, with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol.",
+			"accomplishments": [
+				"Provided architectural guidance in the development of RESTful systems that used Java, JDK 1.8, Spring Boot, Maven, modularity, thread-safe domain objects, data-access objects, services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, PostgreSQL, and Microsoft SQL Server.",
+				"Implemented a command-line tool with Java and Git that analyzed a Maven project and checkout all of its dependencies within the organization in the order that they must be built or tagged. This project leveraged Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of Breadth First Traversal and Depth First Traversal.",
+				"Solved many of the concurrency problems that were required for a functional product. I also used this opportunity to mentor the staff on good concurrency practices.",
+				"Introduced and setup the Flyway database migration tool to provide organization to how we manage our database schema."
+			]
+		},
+		{
+			"name": "Loot Crate",
+			"logo": "lootcrate.png",
+			"location": "Los Angeles, CA",
+			"start": "Apr 2015",
+			"end": "Nov 2015",
+			"title": "Sr. Software Engineer",
+			"prologue": "Provided architectural guidance to transition from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions that would lead to a distributed system.",
+			"accomplishments": [
+				"I developed database migration scripts to provide referential integrity and auditing functionality to a live PostgreSQL Database, that also fixed data anomalies.",
+				"I developed high-performance multi-threaded data ETL extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
+				"I implemented an internal Ruby GEM that we called \"Badger\" that simplified the task of writing high-performance JDBC Batch scripts for Ruby developers. I demonstrated on an application that took 18 hours to complete with Active Record only took 15 minutes with this library."
+			]
+		},
+		{
 			"name": "Overstock.com",
 			"logo": "ostk.png",
 			"location": "South Pasadena, CA",
 			"start": "Oct 2012",
-			"end": "Present",
+			"end": "Apr 2015",
 			"title": "Sr. Software Engineer",
 			"prologue": "Currently work remotely as a consultant in the role of a Sr. Software Engineer on a variety of back office projects.  This includes developing and maintaining REST Web Services, batch processing systems, and web application development. Some of the more interesting tasks that I have accomplished include the following:",
 			"accomplishments": [
@@ -41,7 +70,7 @@
 			"start": "Nov 2010",
 			"end": "Apr 2011",
 			"title": "Sr. Software Engineer / Display Ad Serving",
-			"prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN.  I also was lead developer to create an &quot;agile&quot; technology for creating RESTFul integration services.  We developed a Maven plugin that create RESTFul web services with only SQL queries as input."
+			"prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN.  I also was lead developer to create an \"agile\" technology for creating RESTFul integration services.  We developed a Maven plugin that create RESTFul web services with only SQL queries as input."
 		},
 		{
 			"name": "Fox Audience Network / NewsCorp",
@@ -175,11 +204,15 @@
 		}
 	],
 	"skills" : [
-		"Java, EJB, JDBC, JPA, JSP, Servlet, JAX-RS, JAX-WS, Web Services, REST, Jersey, Jackson, Spring, JAAS, Concurrency, and JavaScript.",
+		"Java, EJB, JDBC, JPA, JSP, Servlet, JAX-RS, JAX-WS, Web Services, REST, JSON, Jersey, Jackson, JAAS, Concurrency Programming, Thread Safety.",
+		"The Spring Framework, Spring Boot, AOP",
+		"Docker, Docker Compose",
 		"Hadoop, Cassandra, HBase, Map Reduce, and DynamoDB",
-		"SQL, Oracle, DB2, MySQL, and Postgres",
-		"Cloud Computing, Distributed Computing, EC2, and Docker",
-		"Linux, bash, awk, and I occasionally write with PERL, Ruby, and Ruby on Rails",
+		"SQL, Oracle, DB2, MySQL, and PostgreSQL",
+		"Cloud Computing, Distributed Computing, EC2",
+		"Ruby, JRuby, Ruby on Rails",
+		"Linux, bash, awk, and I occasionally write with PERL",
+		"Git, Subversion, cvs",
 		"Requirements capture with Use Cases, UML modeling, and Software Engineering.",
         "Agile, Scrum, Stories.",
 		"Verbal, written, and group presentations."
@@ -232,7 +265,7 @@
 			"start": "May, 2004",
 			"end": "Present",
 			"title": "President",
-			"prologue": "I have kept the Los Angeles Java User's Group running since 2004.  This involves choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website.  I have also done several presentations on the topics of Concurrency Programming, and Web Application Development with Java Server Faces, Building with Maven, Persistence with JPA."
+			"prologue": "I have kept the Los Angeles Java User's Group running since 2004. This involves choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website.  I have also done several presentations on the topics of Concurrency Programming, and Web Application Development with Java Server Faces, Building with Maven, Persistence with JPA."
 		}
 	]
 }
