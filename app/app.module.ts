@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ResumeEntryComponent } from './resume/entry/resume-entry.component';
 import { ResumeService } from './resume/resume.service';
+import { PresentationsComponent } from './resume/presentations/presentations.component'
+import { PresentationComponent } from './resume/presentations/presentation/presentation.component'
 
 @NgModule({
     imports: [
@@ -18,13 +20,19 @@ import { ResumeService } from './resume/resume.service';
             {
                 path: '',
                 component: ResumeComponent
+            },
+            {
+                path: 'presentations',
+                component: PresentationsComponent
             }
         ])
     ],
     declarations: [
         AppComponent,
         ResumeComponent,
-        ResumeEntryComponent
+        ResumeEntryComponent,
+        PresentationsComponent,
+        PresentationComponent
     ],
     providers: [ResumeService],
     bootstrap: [AppComponent]

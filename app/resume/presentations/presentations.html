@@ -1,0 +1,11 @@
+<div class="page-header">
+	<h1>Presentations</h1>
+</div>
+
+<div class="container">
+	<div class="panel-group" id="presentations" role="tablist" aria-multiselectable="true">
+		<template ngFor let-presentation [ngForOf]="presentations">
+			<presentation *ngIf="presentation" [presentation]="presentation"></presentation>
+		</template>
+	</div>
+</div>

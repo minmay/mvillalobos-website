@@ -187,28 +187,41 @@
 	],
 	"presentations": [
 		{
+			"id": "unit-testing",
 			"name": "Delivering Quality Software with Modern Unit Testing Techniques",
-			"link": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/pub?start=false&loop=false&delayms=3000"
+			"link": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/pub?start=false&loop=false&delayms=3000",
+			"slides": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/embed?start=false&loop=false&delayms=3000",
+			"video": "https://www.youtube.com/embed/-Rwf3_uEt2E"
 		},
 		{
+			"id": "concurrency-tips",
 			"name": "Tips in Concurrency",
-			"link": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/pub?start=false&loop=false&delayms=3000"
+			"link": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/pub?start=false&loop=false&delayms=3000",
+			"slides": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/embed?start=false&loop=false&delayms=3000"
 		},
 		{
+			"id": "persistence",
 			"name": "Persistence with JPA 2.1",
-			"link": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/pub?start=false&loop=false&delayms=3000"
+			"link": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/pub?start=false&loop=false&delayms=3000",
+			"slides": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/embed?start=false&loop=false&delayms=3000"
 		},
 		{
+			"id": "jruby-on-rails",
 			"name": "Get there Faster with JRuby and JRuby on Rails",
-			"link": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/pub?start=false&loop=false&delayms=3000"
+			"link": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/pub?start=false&loop=false&delayms=3000",
+			"slides": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/embed?start=false&loop=false&delayms=3000"
 		},
 		{
+			"id": "jaxrs",
 			"name": "RESTFul JSON Web Services with Jersey and Jackson",
-			"link": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/pub?start=false&loop=false&delayms=3000"
+			"link": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/pub?start=false&loop=false&delayms=3000",
+			"slides": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/embed?start=false&loop=false&delayms=3000"
 		},
 		{
+			"id": "java-concurrency",
 			"name": "Java Concurrency",
-			"link": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/pub?start=false&loop=false&delayms=3000"
+			"link": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/pub?start=false&loop=false&delayms=3000",
+			"slides": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/embed?start=false&loop=false&delayms=3000"
 		}
 	],
 	"affiliations": [
