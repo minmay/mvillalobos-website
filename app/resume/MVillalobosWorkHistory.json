@@ -15,9 +15,9 @@
       "prologue": "I developed software components for land-based table and cabinet regulated gaming systems. These were closed systems, with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol.",
       "accomplishments": [
         "Provided architectural guidance in the development of RESTful systems that used Java, JDK 1.8, Spring Boot, Maven, thread-safe domain objects, data-access objects, services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, PostgreSQL, and Microsoft SQL Server.",
-        "Implemented a command-line tool with Java and Git that analyzed a Maven project and checkout all of its dependencies within the organization in the order that they must be built or tagged. This project leveraged Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of Breadth First Traversal and Depth First Traversal.",
+        "Implemented a command-line tool with Java and Git that analyzed a Maven project and checked out all of its dependencies within the organization in the order that they must be built or tagged. This project leveraged Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of breadth first traversal and depth first traversal.",
         "Solved many of the concurrency problems that were required for a functional product. I also used this opportunity to mentor the staff on good concurrency practices.",
-        "Introduced and setup the Flyway database migration tool to provide organization to how we manage our database schema."
+        "Introduced and setup the Flyway database migration tool to orgnize how we manage our database."
       ]
     },
     {
@@ -30,9 +30,9 @@
       "title": "Sr. Software Engineer",
       "prologue": "Provided architectural guidance to transition from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions that would lead to a distributed system.",
       "accomplishments": [
-        "I developed database migration scripts to provide referential integrity and auditing functionality to a live PostgreSQL Database, that also fixed data anomalies.",
-        "I developed high-performance multi-threaded data ETL extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
-        "I implemented an internal Ruby GEM that we called \"Badger\" that simplified the task of writing high-performance JDBC Batch scripts for Ruby developers. I demonstrated on an application that took 18 hours to complete with Active Record only took 15 minutes with this library."
+        "I developed database migration scripts to provide referential integrity and auditing functionality to a live PostgreSQL Database. These migrations also fixed data anomalies.",
+        "I developed high-performance multi-threaded ETL data extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
+        "I implemented an internal Ruby GEM that we called \"Badger\" that simplified the task of writing high-performance JDBC Batch scripts for Ruby developers. I compared \"Badger\" to MRI Ruby application that took 18 hours to complete with Active Record versus JRuby with Badger that only took 15 minutes."
       ]
     },
     {
@@ -46,10 +46,10 @@
       "prologue": "Currently work remotely as a consultant in the role of a Sr. Software Engineer on a variety of back office projects.  This includes developing and maintaining REST Web Services, batch processing systems, and web application development. Some of the more interesting tasks that I have accomplished include the following:",
       "accomplishments": [
         "I helped our team develop custom SOA solutions, and also Mule SOA solutions. These solutions were mostly RESTful, and used Spring Boot, JAX-RS, and JPA.",
-        "I developed stateless client facades for HTTP REST, SFTP, and FTP.",
+        "I developed stateless client facade Java libraries for HTTP REST, SFTP, and FTP.",
         "I developed Docker containers for the purpose of integration testing.",
         "I developed a RESTful distributed file system with Netty and Cassandra.",
-        "I developed integration REST services that processed payloads in the GB order range. This RESTful integration service needed to perform. It used HTTP streaming and database batching techniques to achieve a high throughput. This product leveraged Tomcat, JAX-RS, StAX, and JDBC."
+        "I developed a performant integration REST services that processed payloads in the GB order range. It used HTTP streaming and database batching techniques to achieve a high throughput. This product leveraged Tomcat, JAX-RS, StAX, and JDBC."
       ]
     },
     {
@@ -62,7 +62,7 @@
       "title": "Lead Software Engineer",
       "prologue": "I was Lead Developer of SupplyFrame Media's flagship e-commerce platform. This involves leading a small development team. Our team accomplished the following:",
       "accomplishments": [
-        "Our team integrated a similar eCommerce site “OEMSTrade” into our e-commerce platform. This project leveraged Tomcat, Struts 2, Spring, and PostgreSQL.",
+        "Our team integrated external sites into our e-commerce platform. This project leveraged Tomcat, Struts 2, Spring, and PostgreSQL.",
         "Our team integrated full-text search capabilities with Lucene onto our e-commerce platform.",
         "I converted an existing dynamically linked API into a RESTFul Web API with JAX-RS.",
         "I wrote client server system with NIO, Netty, and Protocol Buffers."
@@ -91,7 +91,7 @@
         "Under the guidance of the system's architect and a performance developer, I lead the implementation, and supported a robust, mission-critical high-performance extract-driven data-import process responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques we were able to achieve approximately 2000 transactions per second.",
         "I assisted our team on our Ad Server (the most important and demanding component in our system) to implement 2nd Price Auction, and real-time cookie encryption / decryption routines.",
         "I developed and supported the integration-web services that allowed for the MyAds and Publisher Network Portal products to traffic and manage ad campaigns on the FAN Ad Server. These products used JAX-WS, JAXB, Spring, Hibernate, and DB2.",
-        "I lead the development, with an additional team member, of an XML data-import process that automated the creation of display ads. Using a combination of DOM, StAX, and JDBC batch programming, I was able to process 1 GB XML files in under a minute."
+        "I lead the development of an XML data-import process that automated the creation of display ads. Using a combination of DOM, StAX, and JDBC batch programming, I was able to process 1 GB XML files in under a minute."
       ]
     },
     {
@@ -102,7 +102,7 @@
       "start": "Oct, 2006",
       "end": "Jun, 2007",
       "title": "Lead Software Engineer",
-      "prologue": "I was on a small team that maintained a MVC web application with Social Networking and Karaoke as its distinguishing features. This project leveraged Tomcat, Struts, Spring, and MySQL. I integrated full-text search capabilities with Lucene."
+      "prologue": "I helped maintain an MVC web application with Social Networking and Karaoke as its distinguishing features. This project leveraged Tomcat, Struts, Spring, and MySQL. I integrated full-text search capabilities with Lucene."
     },
     {
       "id": "infospace",
@@ -122,7 +122,7 @@
       "start": "Oct, 2005",
       "end": "Feb, 2006",
       "title": "Sr. Web Developer / Consultant",
-      "prologue": "I maintenanced a web application that leveraged Java, Servlet, Struts, and JDBC."
+      "prologue": "I maintenanced an internal web application that leveraged Java, Servlet, Struts, and JDBC."
     },
     {
       "id": "oracle-corporation",
@@ -142,7 +142,7 @@
       "start": "May, 2004",
       "end": "Jul, 2005",
       "title": "Sr. J2EE Software Engineer / Consultant",
-      "prologue": "I lead the adoption of open-source software and the Java Platform. I lead the development of distributed software systems that leveraged JBoss J2EE Application Server, EJB, JSF, MySql, Linux, CVS, ANT."
+      "prologue": "I lead the adoption of open-source software and the Java Platform. I lead the development of distributed software systems that leveraged JBoss J2EE Application Server, EJB, JSF, MySql, Linux, CVS, and ANT."
     },
     {
       "id": "vft",
@@ -161,7 +161,7 @@
       "start": "November, 2002",
       "end": "May, 2003",
       "title": "IT Consultant / Analyst",
-      "prologue": "As a consultant tasked to write a Job Board, I only went so far as to write the requirements specification, which included a complete set of Use Cases, functional requirements, non-functional requirements, and user-interface prototypes."
+      "prologue": "I delivered the requirements specification, with a complete set of Use Cases, functional requirements, non-functional requirements, and user-interface prototypes for a Job Board."
     },
     {
       "id": "open-text",
@@ -171,7 +171,7 @@
       "start": "Jun, 2000",
       "end": "Oct, 2001",
       "title": "Java Web Developer",
-      "prologue": "I lead the development of two Java Applet clients that were part of a complete Document Management solution. I leveraged AWT, and socket programming. I joined during a transitionary period in which teams were just learning the Java technology stack."
+      "prologue": "I lead the development of two Java Applets that were part of a complete Document Management solution. I leveraged AWT, and socket programming. I joined during a transitionary period in which teams were just learning the Java technology stack."
     },
     {
       "id": "exist",
