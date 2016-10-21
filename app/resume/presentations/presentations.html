@@ -11,9 +11,11 @@
 				<span class="caret"></span>
 			</button>
 			<ul class="dropdown-menu" aria-labelledby="presentations">
-				<li *ngFor="let presentation of presentations" >
+				<li *ngFor="let presentation of presentations">
 					<a (click)="onSelectPresentation(presentation)">
-						{{presentation.name}}
+						<span>{{presentation.name}}</span>
+						<span class="social social-google-drive" aria-hidden="true"></span>
+						<span *ngIf="presentation.video" class="social social-youtube" aria-hidden="true"></span>
 					</a>
 				</li>
 			</ul>
