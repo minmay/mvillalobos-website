@@ -1,271 +1,269 @@
 {
-	"name": "Marco Antonio Villalobos, Jr.",
-	"objective": "Produce enterprise software applications that are critical to a company’s monetization efforts. More specifically, I want to fulfill a senior role [architect, technical lead] in the production of software applications.  I am also open to continuing my work as a remote developer, consultant, or full-time employee.",
-	"email": "mvillalobos@kineteque.com",
-	"mobile": "Furnished Upon Request",
-	"history" : [
-		{
-			"name": "Gamblit Gaming, LLC.",
-			"logo": "gamblit.png",
-			"location": "Glendale, CA",
-			"start": "Nov 2015",
-			"end": "Present",
-			"title": "Sr. Software Engineer",
-			"prologue": "I developed software components for land-based table and cabinet regulated gaming systems. These were closed systems, with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol.",
-			"accomplishments": [
-				"Provided architectural guidance in the development of RESTful systems that used Java, JDK 1.8, Spring Boot, Maven, modularity, thread-safe domain objects, data-access objects, services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, PostgreSQL, and Microsoft SQL Server.",
-				"Implemented a command-line tool with Java and Git that analyzed a Maven project and checkout all of its dependencies within the organization in the order that they must be built or tagged. This project leveraged Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of Breadth First Traversal and Depth First Traversal.",
-				"Solved many of the concurrency problems that were required for a functional product. I also used this opportunity to mentor the staff on good concurrency practices.",
-				"Introduced and setup the Flyway database migration tool to provide organization to how we manage our database schema."
-			]
-		},
-		{
-			"name": "Loot Crate",
-			"logo": "lootcrate.png",
-			"location": "Los Angeles, CA",
-			"start": "Apr 2015",
-			"end": "Nov 2015",
-			"title": "Sr. Software Engineer",
-			"prologue": "Provided architectural guidance to transition from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions that would lead to a distributed system.",
-			"accomplishments": [
-				"I developed database migration scripts to provide referential integrity and auditing functionality to a live PostgreSQL Database, that also fixed data anomalies.",
-				"I developed high-performance multi-threaded data ETL extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
-				"I implemented an internal Ruby GEM that we called \"Badger\" that simplified the task of writing high-performance JDBC Batch scripts for Ruby developers. I demonstrated on an application that took 18 hours to complete with Active Record only took 15 minutes with this library."
-			]
-		},
-		{
-			"name": "Overstock.com",
-			"logo": "ostk.png",
-			"location": "South Pasadena, CA",
-			"start": "Oct 2012",
-			"end": "Apr 2015",
-			"title": "Sr. Software Engineer",
-			"prologue": "Currently work remotely as a consultant in the role of a Sr. Software Engineer on a variety of back office projects.  This includes developing and maintaining REST Web Services, batch processing systems, and web application development. Some of the more interesting tasks that I have accomplished include the following:",
-			"accomplishments": [
-              "I helped our team develop custom SOA solutions, and also Mule SOA solutions.",
-              "I developed stateless client facades for HTTP REST, SFTP, and FTP.",
-              "I developed Docker containers for the purpose of integration testing.",
-              "I developed a Netty HTTP REST service that interfaced with Cassandra."
-			]
-		},
-		{
-			"name": "SupplyFrame Media",
-			"logo": "sfm.png",
-			"location": "Pasadena, CA",
-			"start": "Apr 2011",
-			"end": "Sep 2012",
-			"title": "Lead Software Engineer",
-			"prologue": "I was Lead Developer of SupplyFrame Media's flagship e-commerce platform. This involves supervising a small development team.  Our team accomplished the following:",
-			"accomplishments": [
-				"Our team integrated a similar eCommerce site “OEMSTrade” into our e-commerce platform.",
-				"Our team developed full-text search capabilities with Lucene.",
-				"I converted an existing statically called API into a RESTFul Web Service.",
-                "I wrote client server system with NIO, Netty, and Protocol Buffers."
-			]
-		},
-		{
-			"name": "The Rubicon Project",
-			"logo": "rubicon-project.png",
-			"location": "Los Angeles, CA",
-			"start": "Nov 2010",
-			"end": "Apr 2011",
-			"title": "Sr. Software Engineer / Display Ad Serving",
-			"prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN.  I also was lead developer to create an \"agile\" technology for creating RESTFul integration services.  We developed a Maven plugin that create RESTFul web services with only SQL queries as input."
-		},
-		{
-			"name": "Fox Audience Network / NewsCorp",
-			"logo": "fan.jpg",
-			"location": "Santa Monica, CA",
-			"start": "Jun 2007",
-			"end": "Oct 2010",
-			"title": "Sr. Software Engineer / Monetization",
-			"prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day.  Highlights of my accomplishments include the following:",
-			"accomplishments": [
-				"Under the guidance of the system's architect and a performance developer, I lead the implementation, and supported a robust, mission-critical high-performance extract-driven data-import process responsible for aggregating all display ad impressions.  Using concurrency programming and database batch programming techniques we were able to achieve approximately 2000 transactions per second.",
-				"I assisted our team on our Ad Server (the most important and demanding component in our system) to implement 2nd Price Auction, and cookie encryption / decryption routines.",
-				"I developed and supported the integration-web services that allowed for the MyAds and Publisher Network Portal products to traffic and manage ad campaigns on the FAN Ad Server.",
-				"I lead the development, with an additional team member, of an XML data-import process that automated the creation of display ads.  Using a combination of DOM, StAX, and JDBC batch programming, I was able to process 1 GB XML files in under a minute."
-			]
-		},
-		{
-			"name": "MySpace",
-			"logo": "myspace.jpg",
-			"location": "Beverly Hills, CA",
-			"start": "Oct, 2006",
-			"end": "Jun, 2007",
-			"title": "Lead Software Engineer",
-			"prologue": "I was on a small team that maintained an MVC web application with Social Networking and Karaoke as its distinguishing features.  My most significant accomplishment on this system was integrating full-text search capabilities with Lucene so that users could easily find a song or artist."
-
-		},
-		{
-			"name": "Infospace",
-			"logo": "infospace.png",
-			"location": "Los Angeles, CA",
-			"start": "Apr, 2006",
-			"end": "Oct, 2006",
-			"title": "Sr. Software Engineer / Consultant",
-			"prologue": "I was on a medium sized team that focused on a media purchasing and delivery platform for mobile phones.  I implemented the user provisioning system that helped users share content on T-Mobile's MyFaves product. This product leveraged Java, Servlet, Struts, and JDO."
-		},
-		{
-			"name": "Kaiser Permanente",
-			"logo": "kp.png",
-			"location": "Pasadena, CA",
-			"start": "Oct, 2005",
-			"end": "Feb, 2006",
-			"title": "Sr. Web Developer / Consultant",
-			"prologue": "I was given maintenance tasks on a web application that leveraged Java, Servlet, Struts, and JDBC."
-		},
-		{
-			"name": "Oracle Corporation",
-			"logo": "oracle.jpg",
-			"location": "Los Angeles, CA",
-			"start": "Aug, 2005",
-			"end": "Oct, 2005",
-			"title": "Sr. Principal Consultant",
-			"prologue": "I was on a small consulting team that performed on-site engagements.  I stayed for the duration of just one engagement, in which I assisted our client's team re-architect under a Service Oriented Architecture."
-		},
-		{
-			"name": "BT",
-			"logo": "bt.png",
-			"location": "El Segundo, CA",
-			"start": "May, 2004",
-			"end": "Jul, 2005",
-			"title": "Sr. J2EE Software Engineer / Consultant",
-			"prologue": "I lead the adoption open-source software and the Java Platform. I lead the development of distributed software systems that leveraged the following open-source technologies: JBoss J2EE Application Server, EJB, JSF, MySql, Linux, CVS, ANT."
-		},
-		{
-			"name": "VFT, Incorporated",
-			"location": "Montebello, CA",
-			"start": "Apr, 2003",
-			"end": "Oct, 2003",
-			"title": "Consultant",
-			"prologue": "I wrote user-interface prototypes for an e-commerce site that sold linen products."
-		},
-		{
-			"name": "Med Exec International",
-			"logo": "medex.jpg",
-			"location": "Glendale, CA",
-			"start": "November, 2002",
-			"end": "May, 2003",
-			"title": "IT Consultant / Analyst",
-			"prologue": "As a consultant tasked to write a Job Board, I only went so far as to write the requirements specification, which included a complete set of Use Cases, functional requirements, non-functional requirements, and user-interface prototypes."
-		},
-		{
-			"name": "Open Text [Formerly Gauss Interprise, and Magellan]",
-			"logo": "opentext.png",
-			"location": "Irvine, CA",
-			"start": "Jun, 2000",
-			"end": "Oct, 2001",
-			"title": "Java Web Developer",
-			"prologue": "I lead the development of two Java Applet clients that were part of a complete Document Management solution.  I did this using AWT, and socket programming.  I joined during a transitionary period in which teams were just learning to leverage the Java technology stack."
-		},
-		{
-			"name": "Exist Corporation",
-			"logo": "exist.jpg",
-			"location": "Santa Monica, CA",
-			"start": "Jan, 2000",
-			"end": "Jun, 2000",
-			"title": "Software Engineer",
-			"prologue": "Maintenance and development of an e-commerce system utilizing JSP, Servlet, and JDBC."
-		},
-		{
-			"name": "Sarnoff Legal Technologies",
-			"location": "Irvine, CA",
-			"start": "Nov, 1999",
-			"end": "Jan, 2000",
-			"title": "Consultant",
-			"prologue": "Wrote a legal-services time-tracking system with a Java applet, JDBC, and MS SQL Server."
-		},
-		{
-			"name": "NexGen SI",
-			"logo": "nexgenix.gif",
-			"location": "Irvine, CA",
-			"start": "Apr, 1999",
-			"end": "Aug, 1999",
-			"title": "Associate Client Server Developer",
-			"prologue": "Trained as a consultant and developed Visual Basic prototypes."
-		}
-
-	],
-	"education" : [
-		{
-			"name": "University of California Irvine",
-			"logo": "uci.jpg",
-			"start": "1996",
-			"end": "1999",
-			"degree": "B.S., Information and Computer Science"
-		},
-		{
-			"name": "Pasadena City College",
-			"logo": "pcc.gif",
-			"start": "1992",
-			"end": "1995",
-			"degree": "Associates of Arts"
-		}
-	],
-	"skills" : [
-		"Java, EJB, JDBC, JPA, JSP, Servlet, JAX-RS, JAX-WS, Web Services, REST, JSON, Jersey, Jackson, JAAS, Concurrency Programming, Thread Safety.",
-		"The Spring Framework, Spring Boot, AOP",
-		"Docker, Docker Compose",
-		"Hadoop, Cassandra, HBase, Map Reduce, and DynamoDB",
-		"SQL, Oracle, DB2, MySQL, and PostgreSQL",
-		"Cloud Computing, Distributed Computing, EC2",
-		"Ruby, JRuby, Ruby on Rails",
-		"Linux, bash, awk, and I occasionally write with PERL",
-		"Git, Subversion, cvs",
-		"Requirements capture with Use Cases, UML modeling, and Software Engineering.",
-        "Agile, Scrum, Stories.",
-		"Verbal, written, and group presentations."
-
-	],
-	"presentations": [
-		{
-			"id": "unit-testing",
-			"name": "Delivering Quality Software with Modern Unit Testing Techniques",
-			"link": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/pub?start=false&loop=false&delayms=3000",
-			"slides": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/embed?start=false&loop=false&delayms=3000",
-			"video": "https://www.youtube.com/embed/-Rwf3_uEt2E"
-		},
-		{
-			"id": "concurrency-tips",
-			"name": "Tips in Concurrency",
-			"link": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/pub?start=false&loop=false&delayms=3000",
-			"slides": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/embed?start=false&loop=false&delayms=3000"
-		},
-		{
-			"id": "persistence",
-			"name": "Persistence with JPA 2.1",
-			"link": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/pub?start=false&loop=false&delayms=3000",
-			"slides": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/embed?start=false&loop=false&delayms=3000"
-		},
-		{
-			"id": "jruby-on-rails",
-			"name": "Get there Faster with JRuby and JRuby on Rails",
-			"link": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/pub?start=false&loop=false&delayms=3000",
-			"slides": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/embed?start=false&loop=false&delayms=3000"
-		},
-		{
-			"id": "jaxrs",
-			"name": "RESTFul JSON Web Services with Jersey and Jackson",
-			"link": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/pub?start=false&loop=false&delayms=3000",
-			"slides": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/embed?start=false&loop=false&delayms=3000"
-		},
-		{
-			"id": "java-concurrency",
-			"name": "Java Concurrency",
-			"link": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/pub?start=false&loop=false&delayms=3000",
-			"slides": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/embed?start=false&loop=false&delayms=3000"
-		}
-	],
-	"affiliations": [
-		{
-			"name": "Los Angeles Java User's Group",
-			"logo": "lajug.gif",
-			"location": "Los Angeles, CA",
-			"start": "May, 2004",
-			"end": "Present",
-			"title": "President",
-			"prologue": "I have kept the Los Angeles Java User's Group running since 2004. This involves choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website.  I have also done several presentations on the topics of Concurrency Programming, and Web Application Development with Java Server Faces, Building with Maven, Persistence with JPA."
-		}
-	]
+  "name": "Marco Antonio Villalobos, Jr.",
+  "objective": "Produce enterprise software applications that are critical to a company’s monetization efforts. More specifically, I want to fulfill a senior role [architect, technical lead] in the production of software applications.  I am also open to continuing my work as a remote developer, consultant, or full-time employee.",
+  "email": "mvillalobos@kineteque.com",
+  "mobile": "Furnished Upon Request",
+  "history": [
+    {
+      "name": "Gamblit Gaming, LLC.",
+      "logo": "gamblit.png",
+      "location": "Glendale, CA",
+      "start": "Nov 2015",
+      "end": "Present",
+      "title": "Sr. Software Engineer",
+      "prologue": "I developed software components for land-based table and cabinet regulated gaming systems. These were closed systems, with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol.",
+      "accomplishments": [
+        "Provided architectural guidance in the development of RESTful systems that used Java, JDK 1.8, Spring Boot, Maven, thread-safe domain objects, data-access objects, services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, PostgreSQL, and Microsoft SQL Server.",
+        "Implemented a command-line tool with Java and Git that analyzed a Maven project and checkout all of its dependencies within the organization in the order that they must be built or tagged. This project leveraged Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of Breadth First Traversal and Depth First Traversal.",
+        "Solved many of the concurrency problems that were required for a functional product. I also used this opportunity to mentor the staff on good concurrency practices.",
+        "Introduced and setup the Flyway database migration tool to provide organization to how we manage our database schema."
+      ]
+    },
+    {
+      "name": "Loot Crate",
+      "logo": "lootcrate.png",
+      "location": "Los Angeles, CA",
+      "start": "Apr 2015",
+      "end": "Nov 2015",
+      "title": "Sr. Software Engineer",
+      "prologue": "Provided architectural guidance to transition from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions that would lead to a distributed system.",
+      "accomplishments": [
+        "I developed database migration scripts to provide referential integrity and auditing functionality to a live PostgreSQL Database, that also fixed data anomalies.",
+        "I developed high-performance multi-threaded data ETL extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
+        "I implemented an internal Ruby GEM that we called \"Badger\" that simplified the task of writing high-performance JDBC Batch scripts for Ruby developers. I demonstrated on an application that took 18 hours to complete with Active Record only took 15 minutes with this library."
+      ]
+    },
+    {
+      "name": "Overstock.com",
+      "logo": "ostk.png",
+      "location": "South Pasadena, CA",
+      "start": "Oct 2012",
+      "end": "Apr 2015",
+      "title": "Sr. Software Engineer",
+      "prologue": "Currently work remotely as a consultant in the role of a Sr. Software Engineer on a variety of back office projects.  This includes developing and maintaining REST Web Services, batch processing systems, and web application development. Some of the more interesting tasks that I have accomplished include the following:",
+      "accomplishments": [
+        "I helped our team develop custom SOA solutions, and also Mule SOA solutions. These solutions were mostly RESTful, and used Spring Boot, JAX-RS, and JPA.",
+        "I developed stateless client facades for HTTP REST, SFTP, and FTP.",
+        "I developed Docker containers for the purpose of integration testing.",
+        "I developed a RESTful distributed file system with Netty and Cassandra.",
+        "I developed integration REST services that processed payloads in the GB order range. This RESTful integration service needed to perform. It used HTTP streaming and database batching techniques to achieve a high throughput. This product leveraged Tomcat, JAX-RS, StAX, and JDBC."
+      ]
+    },
+    {
+      "name": "SupplyFrame Media",
+      "logo": "sfm.png",
+      "location": "Pasadena, CA",
+      "start": "Apr 2011",
+      "end": "Sep 2012",
+      "title": "Lead Software Engineer",
+      "prologue": "I was Lead Developer of SupplyFrame Media's flagship e-commerce platform. This involves leading a small development team. Our team accomplished the following:",
+      "accomplishments": [
+        "Our team integrated a similar eCommerce site “OEMSTrade” into our e-commerce platform. This project leveraged Tomcat, Struts 2, Spring, and PostgreSQL.",
+        "Our team integrated full-text search capabilities with Lucene onto our e-commerce platform.",
+        "I converted an existing dynamically linked API into a RESTFul Web API with JAX-RS.",
+        "I wrote client server system with NIO, Netty, and Protocol Buffers."
+      ]
+    },
+    {
+      "name": "The Rubicon Project",
+      "logo": "rubicon-project.png",
+      "location": "Los Angeles, CA",
+      "start": "Nov 2010",
+      "end": "Apr 2011",
+      "title": "Sr. Software Engineer / Display Ad Serving",
+      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" technology for creating RESTFul integration services from database queries."
+    },
+    {
+      "name": "Fox Audience Network / NewsCorp",
+      "logo": "fan.jpg",
+      "location": "Santa Monica, CA",
+      "start": "Jun 2007",
+      "end": "Oct 2010",
+      "title": "Sr. Software Engineer / Monetization",
+      "prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day.  Highlights of my accomplishments include the following:",
+      "accomplishments": [
+        "Under the guidance of the system's architect and a performance developer, I lead the implementation, and supported a robust, mission-critical high-performance extract-driven data-import process responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques we were able to achieve approximately 2000 transactions per second.",
+        "I assisted our team on our Ad Server (the most important and demanding component in our system) to implement 2nd Price Auction, and real-time cookie encryption / decryption routines.",
+        "I developed and supported the integration-web services that allowed for the MyAds and Publisher Network Portal products to traffic and manage ad campaigns on the FAN Ad Server. These products used JAX-WS, JAXB, Spring, Hibernate, and DB2.",
+        "I lead the development, with an additional team member, of an XML data-import process that automated the creation of display ads. Using a combination of DOM, StAX, and JDBC batch programming, I was able to process 1 GB XML files in under a minute."
+      ]
+    },
+    {
+      "name": "MySpace",
+      "logo": "myspace.jpg",
+      "location": "Beverly Hills, CA",
+      "start": "Oct, 2006",
+      "end": "Jun, 2007",
+      "title": "Lead Software Engineer",
+      "prologue": "I was on a small team that maintained a MVC web application with Social Networking and Karaoke as its distinguishing features. This project leveraged Tomcat, Struts, Spring, and MySQL. I integrated full-text search capabilities with Lucene."
+    },
+    {
+      "name": "Infospace",
+      "logo": "infospace.png",
+      "location": "Los Angeles, CA",
+      "start": "Apr, 2006",
+      "end": "Oct, 2006",
+      "title": "Sr. Software Engineer / Consultant",
+      "prologue": "I was on a medium sized team that developed a media purchasing and delivery platform for mobile phones. I implemented the user provisioning system that allowed users to share content on T-Mobile's MyFaves product. This product leveraged Java, Servlet, Struts, and JDO."
+    },
+    {
+      "name": "Kaiser Permanente",
+      "logo": "kp.png",
+      "location": "Pasadena, CA",
+      "start": "Oct, 2005",
+      "end": "Feb, 2006",
+      "title": "Sr. Web Developer / Consultant",
+      "prologue": "I maintenanced a web application that leveraged Java, Servlet, Struts, and JDBC."
+    },
+    {
+      "name": "Oracle Corporation",
+      "logo": "oracle.jpg",
+      "location": "Los Angeles, CA",
+      "start": "Aug, 2005",
+      "end": "Oct, 2005",
+      "title": "Sr. Principal Consultant",
+      "prologue": "I was on a small consulting team that performed on-site engagements. I assisted our client's team re-architect under a Service Oriented Architecture."
+    },
+    {
+      "name": "BT",
+      "logo": "bt.png",
+      "location": "El Segundo, CA",
+      "start": "May, 2004",
+      "end": "Jul, 2005",
+      "title": "Sr. J2EE Software Engineer / Consultant",
+      "prologue": "I lead the adoption of open-source software and the Java Platform. I lead the development of distributed software systems that leveraged JBoss J2EE Application Server, EJB, JSF, MySql, Linux, CVS, ANT."
+    },
+    {
+      "name": "VFT, Incorporated",
+      "location": "Montebello, CA",
+      "start": "Apr, 2003",
+      "end": "Oct, 2003",
+      "title": "Consultant",
+      "prologue": "I wrote user-interface prototypes for an e-commerce site that sold linen products."
+    },
+    {
+      "name": "Med Exec International",
+      "logo": "medex.jpg",
+      "location": "Glendale, CA",
+      "start": "November, 2002",
+      "end": "May, 2003",
+      "title": "IT Consultant / Analyst",
+      "prologue": "As a consultant tasked to write a Job Board, I only went so far as to write the requirements specification, which included a complete set of Use Cases, functional requirements, non-functional requirements, and user-interface prototypes."
+    },
+    {
+      "name": "Open Text [Formerly Gauss Interprise, and Magellan]",
+      "logo": "opentext.png",
+      "location": "Irvine, CA",
+      "start": "Jun, 2000",
+      "end": "Oct, 2001",
+      "title": "Java Web Developer",
+      "prologue": "I lead the development of two Java Applet clients that were part of a complete Document Management solution. I leveraged AWT, and socket programming. I joined during a transitionary period in which teams were just learning the Java technology stack."
+    },
+    {
+      "name": "Exist Corporation",
+      "logo": "exist.jpg",
+      "location": "Santa Monica, CA",
+      "start": "Jan, 2000",
+      "end": "Jun, 2000",
+      "title": "Software Engineer",
+      "prologue": "Maintenance and development of an e-commerce system utilizing JSP, Servlet, and JDBC."
+    },
+    {
+      "name": "Sarnoff Legal Technologies",
+      "location": "Irvine, CA",
+      "start": "Nov, 1999",
+      "end": "Jan, 2000",
+      "title": "Consultant",
+      "prologue": "Wrote a legal-services time-tracking system with a Java applet, JDBC, and Microsoft SQL Server."
+    },
+    {
+      "name": "NexGen SI",
+      "logo": "nexgenix.gif",
+      "location": "Irvine, CA",
+      "start": "Apr, 1999",
+      "end": "Aug, 1999",
+      "title": "Associate Client Server Developer",
+      "prologue": "Trained as a consultant and developed Visual Basic prototypes."
+    }
+  ],
+  "education": [
+    {
+      "name": "University of California Irvine",
+      "logo": "uci.jpg",
+      "start": "1996",
+      "end": "1999",
+      "degree": "B.S., Information and Computer Science"
+    },
+    {
+      "name": "Pasadena City College",
+      "logo": "pcc.gif",
+      "start": "1992",
+      "end": "1995",
+      "degree": "Associates of Arts"
+    }
+  ],
+  "skills": [
+    "Java, EJB, JDBC, JPA, JSP, Servlet, JAX-RS, JAX-WS, Web Services, REST, JSON, Jersey, Jackson, JAAS, Concurrency Programming, Thread Safety.",
+    "The Spring Framework, Spring Boot, AOP",
+    "Docker, Docker Compose",
+    "Hadoop, Cassandra, HBase, Map Reduce, and DynamoDB",
+    "SQL, Oracle, DB2, MySQL, and PostgreSQL",
+    "Cloud Computing, Distributed Computing, EC2",
+    "Ruby, JRuby, Ruby on Rails",
+    "Linux, bash, awk, and I occasionally write with PERL",
+    "Git, Subversion, cvs",
+    "Requirements capture with Use Cases, UML modeling, and Software Engineering.",
+    "Agile, Scrum, Stories.",
+    "Verbal, written, and group presentations."
+  ],
+  "presentations": [
+    {
+      "id": "unit-testing",
+      "name": "Delivering Quality Software with Modern Unit Testing Techniques",
+      "link": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/pub?start=false&loop=false&delayms=3000",
+      "slides": "https://docs.google.com/presentation/d/1evzonY7EdKULxigmibtxqV9h4c4YdGM73WlBgIzAfiY/embed?start=false&loop=false&delayms=3000",
+      "video": "https://www.youtube.com/embed/-Rwf3_uEt2E"
+    },
+    {
+      "id": "concurrency-tips",
+      "name": "Tips in Concurrency",
+      "link": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/pub?start=false&loop=false&delayms=3000",
+      "slides": "https://docs.google.com/presentation/d/1a_C98s4i4KPl_aVa7TbTGMONFF32OtcUiF_urrTtbqc/embed?start=false&loop=false&delayms=3000"
+    },
+    {
+      "id": "persistence",
+      "name": "Persistence with JPA 2.1",
+      "link": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/pub?start=false&loop=false&delayms=3000",
+      "slides": "https://docs.google.com/presentation/d/1DkYA9WBl-85J2NCsdza7mPqIPq2WEB9pC6sdHnFxDn0/embed?start=false&loop=false&delayms=3000"
+    },
+    {
+      "id": "jruby-on-rails",
+      "name": "Get there Faster with JRuby and JRuby on Rails",
+      "link": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/pub?start=false&loop=false&delayms=3000",
+      "slides": "https://docs.google.com/presentation/d/1Jem47EhUYlSRC6kGFUZztiCXXsiZ9eGYRWHDcYumDVE/embed?start=false&loop=false&delayms=3000"
+    },
+    {
+      "id": "jaxrs",
+      "name": "RESTFul JSON Web Services with Jersey and Jackson",
+      "link": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/pub?start=false&loop=false&delayms=3000",
+      "slides": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/embed?start=false&loop=false&delayms=3000"
+    },
+    {
+      "id": "java-concurrency",
+      "name": "Java Concurrency",
+      "link": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/pub?start=false&loop=false&delayms=3000",
+      "slides": "https://docs.google.com/presentation/d/1jyGlUk3ly995RpgV2lU0ZfiguSkO3TGRLjenAfG7X4o/embed?start=false&loop=false&delayms=3000"
+    }
+  ],
+  "affiliations": [
+    {
+      "name": "Los Angeles Java User's Group",
+      "logo": "lajug.gif",
+      "location": "Los Angeles, CA",
+      "start": "May, 2004",
+      "end": "Present",
+      "title": "President",
+      "prologue": "I have kept the Los Angeles Java User's Group running since 2004. This involves choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website.  I have also done several presentations on the topics of Concurrency Programming, and Web Application Development with Java Server Faces, Building with Maven, Persistence with JPA."
+    }
+  ]
 }
