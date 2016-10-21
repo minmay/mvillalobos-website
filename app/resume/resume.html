@@ -1,5 +1,5 @@
 <div class="page-header">
-	<h1>Marco Villalobos
+	<h1 id="resume">Marco Villalobos
 		<small>Resume</small>
 	</h1>
 </div>
@@ -8,26 +8,26 @@
 	<div class="row">
 		<div class="col-md-9">
 			<dl class="dl-horizontal" *ngIf="resume">
-				<dt>Email</dt>
+				<dt id="email">Email</dt>
 				<dd><a href="mailto:{{resume.email}}">{{resume.email}}</a>
 
 					<p></p></dd>
 
 				<template [ngIf]="resume.objective">
-					<dt>Objective</dt>
+					<dt id="objective">Objective</dt>
 					<dd>{{resume.objective}}<p></p></dd>
 				</template>
 
-				<dt>Work History</dt>
+				<dt id="work-history">Work History</dt>
 				<dd>
 					<table class="table">
 						<template ngFor let-experience [ngForOf]="resume.history">
-							<resume-entry [entry]="experience"></resume-entry>
+							<resume-entry id="{{experience.id}}" [entry]="experience"></resume-entry>
 						</template>
 					</table>
 				</dd>
 
-				<dt>Education</dt>
+				<dt id="education">Education</dt>
 				<dd>
 					<table class="table">
 						<template ngFor let-experience [ngForOf]="resume.education">
@@ -51,7 +51,7 @@
 					</table>
 				</dd>
 
-				<dt>Skills</dt>
+				<dt id="skills">Skills</dt>
 				<dd>
 					<template ngFor let-skill [ngForOf]="resume.skills">
 						<p>{{skill}}</p>
@@ -59,14 +59,14 @@
 					<hr/>
 				</dd>
 
-				<dt>Presentations</dt>
+				<dt id="presentations">Presentations</dt>
 				<dd>
 					<template ngFor let-presentation [ngForOf]="resume.presentations">
 						<p><a href="{{presentation.link}}" target="_blank">{{presentation.name}}</a></p>
 					</template>
 				</dd>
 
-				<dt>Affiliations</dt>
+				<dt id="affiliations">Affiliations</dt>
 				<dd>
 					<table class="table">
 						<template ngFor let-experience [ngForOf]="resume.affiliations">
@@ -77,13 +77,13 @@
 			</dl>
 		</div>
 		<div class="col-md-3">
-			<div class="hidden-print"><p>Resume also available in following formats:</p>
-			<a href="MVillalobosWorkHistory.docx"><img src="app/resume/images/word.gif" alt="" name="word" width="19" height="19" border="0">
-				Microsoft Word</a><br>
-			<a href="MVillalobosWorkHistory.pdf"><img src="app/resume/images/pdf.gif" alt="" name="pdf" width="19" height="19" border="0" id="pdf">
-				PDF</a><br>
-			<a href="app/resume/MVillalobosWorkHistory.json"><img border="0" height="19" src="app/resume/images/text.gif" width="19">
-				JSON</a></div>
+			<div class="hidden-print" *ngIf="false"><p>Resume also available in following formats:</p>
+				<span class="filetypes filetypes-doc"></span><a href="MVillalobosWorkHistory.docx">
+					Microsoft Word</a><br>
+				<span class="filetypes filetypes-pdf"></span><a href="MVillalobosWorkHistory.pdf">
+					PDF</a><br>
+				<span class="filetypes filetypes-json"></span><a href="app/resume/MVillalobosWorkHistory.json">
+					JSON</a></div>
 		</div>
 	</div>
 </div>
