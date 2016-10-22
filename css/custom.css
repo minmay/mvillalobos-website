@@ -1,0 +1,17 @@
+body {
+    margin-top: 70px;
+}
+
+.table > tr > td > img {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 50px;
+}
+
+.table > resume-entry> tr > td > img {
+    height: auto;
+    width: auto;
+    max-width: 250px;
+    max-height: 50px;
+}

@@ -32,8 +32,7 @@
 					<table class="table">
 						<template ngFor let-experience [ngForOf]="resume.education">
 							<tr *ngIf="experience.logo">
-								<td colspan="3"><img src="app/resume/images/{{experience.logo}}" border="0"
-													 style="height:auto; width:auto; max-width:250px; max-height:50px;"/>
+								<td colspan="3"><img src="app/resume/images/{{experience.logo}}" border="0"/>
 
 									<p></p></td>
 							</tr>
@@ -77,10 +76,10 @@
 			</dl>
 		</div>
 		<div class="col-md-3">
-			<div class="hidden-print" *ngIf="false"><p>Resume also available in following formats:</p>
-				<span class="filetypes filetypes-doc"></span><a href="MVillalobosWorkHistory.docx">
+			<div class="hidden-print"><p>Resume also available in following formats:</p>
+				<span class="filetypes filetypes-doc"></span><a href="app/resume/MVillalobosWorkHistory.docx">
 					Microsoft Word</a><br>
-				<span class="filetypes filetypes-pdf"></span><a href="MVillalobosWorkHistory.pdf">
+				<span class="filetypes filetypes-pdf"></span><a href="app/resume/MVillalobosWorkHistory.pdf">
 					PDF</a><br>
 				<span class="filetypes filetypes-json"></span><a href="app/resume/MVillalobosWorkHistory.json">
 					JSON</a></div>
