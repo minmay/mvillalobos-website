@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { ResumeService } from './resume.service';
+import { Resume } from './resume.model';
 
 @Component({
   selector: 'resume',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  resume: Resume;
 
-  ngOnInit() {
+  constructor (private resumeService: ResumeService) {
+  }
+
+  ngOnInit(): void {
+    this.getResume();
+  }
+
+  getResume(): void {
+    this.resumeService
+      .findResume()
+      .then(resume => this.resume = resume);
   }
 
 }

@@ -1,3 +1,91 @@
-<p>
-  resume works!
-</p>
+<div class="page-header">
+  <h1 id="resume">Marco Villalobos
+    <small>Resume</small>
+  </h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <dl class="dl-horizontal" *ngIf="resume">
+        <dt id="email">Email</dt>
+        <dd><a href="mailto:{{resume.email}}">{{resume.email}}</a>
+
+          <p></p></dd>
+
+        <template [ngIf]="resume.objective">
+          <dt id="objective">Objective</dt>
+          <dd>{{resume.objective}}<p></p></dd>
+        </template>
+
+        <dt id="work-history">Work History</dt>
+        <dd>
+          <table class="table">
+            <template ngFor let-experience [ngForOf]="resume.history">
+              <resume-entry id="{{experience.id}}" [entry]="experience"></resume-entry>
+            </template>
+          </table>
+        </dd>
+
+        <dt id="education">Education</dt>
+        <dd>
+          <table class="table">
+            <template ngFor let-experience [ngForOf]="resume.education">
+              <tr *ngIf="experience.logo">
+                <td colspan="3"><img class="education-img" src="assets/resume/images/{{experience.logo}}" border="0"/>
+
+                  <p></p></td>
+              </tr>
+              <tr>
+                <td>{{experience.start}} - {{experience.end}}</td>
+                <td>{{experience.name}}</td>
+                <td>{{experience.degree}}</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <hr/>
+                </td>
+              </tr>
+            </template>
+          </table>
+        </dd>
+
+        <dt id="skills">Skills</dt>
+        <dd>
+          <template ngFor let-skill [ngForOf]="resume.skills">
+            <p>{{skill}}</p>
+          </template>
+          <hr/>
+        </dd>
+
+        <dt id="presentations">Presentations</dt>
+        <dd>
+          <template ngFor let-presentation [ngForOf]="resume.presentations">
+            <p><a href="{{presentation.link}}" target="_blank">{{presentation.name}}</a></p>
+          </template>
+        </dd>
+
+        <dt id="affiliations">Affiliations</dt>
+        <dd>
+          <table class="table">
+            <template ngFor let-experience [ngForOf]="resume.affiliations">
+              <resume-entry [entry]="experience"></resume-entry>
+            </template>
+          </table>
+        </dd>
+      </dl>
+    </div>
+    <div class="col-md-3">
+      <div class="hidden-print"><p>Resume also available in following formats:</p>
+        <span class="filetypes filetypes-doc"></span><a href="assets/resume/MVillalobosWorkHistory.docx">
+          Microsoft Word</a><br>
+        <span class="filetypes filetypes-pdf"></span><a href="assets/resume/MVillalobosWorkHistory.pdf">
+          PDF</a><br>
+        <span class="filetypes filetypes-json"></span><a href="assets/resume/MVillalobosWorkHistory.json">
+          JSON</a></div>
+
+    </div>
+  </div>
+</div>
+
+
