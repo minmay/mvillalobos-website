@@ -32,3 +32,20 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+# glyphicon licensed artifacts
+src/assets/css/
+src/assets/css/glyphicons-bootstrap.css
+src/assets/css/glyphicons-filetypes.css
+src/assets/css/glyphicons-social.css
+
+src/assets/fonts/glyphicons-filetypes-regular.eot
+src/assets/fonts/glyphicons-filetypes-regular.svg
+src/assets/fonts/glyphicons-filetypes-regular.ttf
+src/assets/fonts/glyphicons-filetypes-regular.woff
+src/assets/fonts/glyphicons-filetypes-regular.woff2
+src/assets/fonts/glyphicons-social-regular.eot
+src/assets/fonts/glyphicons-social-regular.svg
+src/assets/fonts/glyphicons-social-regular.ttf
+src/assets/fonts/glyphicons-social-regular.woff
+src/assets/fonts/glyphicons-social-regular.woff2
