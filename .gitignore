@@ -1,21 +1,21 @@
 node_modules
 
-app/**/*.js
-app/**/*.js.map
+manual/app/**/*.js
+manual/app/**/*.js.map
 
 npm-debug.log
 
-fonts/glyphicons-social-regular.eot
-fonts/glyphicons-social-regular.svg
-fonts/glyphicons-social-regular.ttf
-fonts/glyphicons-social-regular.woff
-fonts/glyphicons-social-regular.woff2
-css/glyphicons-bootstrap.css
-css/glyphicons-social.css
+manual/fonts/glyphicons-social-regular.eot
+manual/fonts/glyphicons-social-regular.svg
+manual/fonts/glyphicons-social-regular.ttf
+manual/fonts/glyphicons-social-regular.woff
+manual/fonts/glyphicons-social-regular.woff2
+manual/css/glyphicons-bootstrap.css
+manual/css/glyphicons-social.css
 
-fonts/glyphicons-filetypes-regular.eot
-fonts/glyphicons-filetypes-regular.svg
-fonts/glyphicons-filetypes-regular.ttf
-fonts/glyphicons-filetypes-regular.woff
-fonts/glyphicons-filetypes-regular.woff2
-css/glyphicons-filetypes.css
+manual/fonts/glyphicons-filetypes-regular.eot
+manual/fonts/glyphicons-filetypes-regular.svg
+manual/fonts/glyphicons-filetypes-regular.ttf
+manual/fonts/glyphicons-filetypes-regular.woff
+manual/fonts/glyphicons-filetypes-regular.woff2
+manual/css/glyphicons-filetypes.css
