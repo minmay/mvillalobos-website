@@ -1,21 +1,34 @@
-node_modules
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-manual/app/**/*.js
-manual/app/**/*.js.map
+# compiled output
+/dist
+/tmp
 
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+/.vscode
+.project
+.classpath
+*.launch
+.settings/
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
 npm-debug.log
+testem.log
+/typings
 
-manual/fonts/glyphicons-social-regular.eot
-manual/fonts/glyphicons-social-regular.svg
-manual/fonts/glyphicons-social-regular.ttf
-manual/fonts/glyphicons-social-regular.woff
-manual/fonts/glyphicons-social-regular.woff2
-manual/css/glyphicons-bootstrap.css
-manual/css/glyphicons-social.css
+# e2e
+/e2e/*.js
+/e2e/*.map
 
-manual/fonts/glyphicons-filetypes-regular.eot
-manual/fonts/glyphicons-filetypes-regular.svg
-manual/fonts/glyphicons-filetypes-regular.ttf
-manual/fonts/glyphicons-filetypes-regular.woff
-manual/fonts/glyphicons-filetypes-regular.woff2
-manual/css/glyphicons-filetypes.css
+#System Files
+.DS_Store
+Thumbs.db
