@@ -12,16 +12,16 @@
         <li *ngFor="let presentation of presentations">
           <a (click)="onSelectPresentation(presentation)">
             <span>{{presentation.name}}</span>
-            <span class="social social-google-drive" aria-hidden="true"></span>
-            <span *ngIf="presentation.video" class="social social-youtube" aria-hidden="true"></span>
+            <span class="mdi mdi-google-drive" aria-hidden="true"></span>
+            <span *ngIf="presentation.video" class="fa fa-youtube" aria-hidden="true"></span>
           </a>
         </li>
       </ul>
     </div>
     <div *ngIf="selectedPresentation" class="btn-group" role="group" aria-label="options">
-      <button *ngIf="!selectedPresentation.video" disabled type="button" class="btn btn-default"><span class="social social-google-drive" aria-hidden="true"></span> Slides</button>
-      <button *ngIf="selectedPresentation.video" type="button" (click)="onSelectSlides()" class="btn btn-default"><span class="social social-google-drive" aria-hidden="true"></span> Slides</button>
-      <button *ngIf="selectedPresentation.video" (click)="onSelectVideo()" type="button" class="btn btn-default"><span class="social social-youtube" aria-hidden="true"></span> Video</button>
+      <button *ngIf="!selectedPresentation.video" disabled type="button" class="btn btn-default"><span class="mdi mdi-google-drive" aria-hidden="true"></span> Slides</button>
+      <button *ngIf="selectedPresentation.video" type="button" (click)="onSelectSlides()" class="btn btn-default"><span class="mdi mdi-google-drive" aria-hidden="true"></span> Slides</button>
+      <button *ngIf="selectedPresentation.video" (click)="onSelectVideo()" type="button" class="btn btn-default"><span class="fa fa-youtube" aria-hidden="true"></span> Video</button>
     </div>
   </div>
   <p></p>
