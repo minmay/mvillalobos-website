@@ -1,10 +1,10 @@
-import { WebsitePage } from './app.po';
+import { MvillalobosWebsitePage } from './app.po';
 
-describe('website App', function() {
-  let page: WebsitePage;
+describe('mvillalobos-website App', function() {
+  let page: MvillalobosWebsitePage;
 
   beforeEach(() => {
-    page = new WebsitePage();
+    page = new MvillalobosWebsitePage();
   });
 
   it('should display message saying app works', () => {
