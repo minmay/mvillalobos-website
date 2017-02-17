@@ -1,6 +1,6 @@
 {
   "name": "Marco Antonio Villalobos, Jr.",
-  "objective": "Produce enterprise software applications that are critical to a company’s monetization efforts. More specifically, I want to fulfill a senior role [architect, technical lead] in the production of software applications.  I am also open to continuing my work as a remote developer, consultant, or full-time employee.",
+  "objective": "I want to be instrumental in the production of software that makes massive amounts of money.",
   "email": "mvillalobos@kineteque.com",
   "mobile": "Furnished Upon Request",
   "history": [
@@ -60,7 +60,7 @@
       "start": "Apr 2011",
       "end": "Sep 2012",
       "title": "Lead Software Engineer",
-      "prologue": "I was Lead Developer of SupplyFrame Media's flagship e-commerce platform. This involves leading a small development team. Our team accomplished the following:",
+      "prologue": "I was Lead Developer of SupplyFrame Media's flagship e-commerce platform. This involved leading a small development team. Our team accomplished the following:",
       "accomplishments": [
         "Our team integrated external sites into our e-commerce platform. This project leveraged Tomcat, Struts 2, Spring, and PostgreSQL.",
         "Our team integrated full-text search capabilities with Lucene onto our e-commerce platform.",
@@ -237,6 +237,19 @@
     "Verbal, written, and group presentations."
   ],
   "presentations": [
+    {
+      "id": "spring-boot",
+      "name": "Get to Production Faster with Spring Boot",
+      "link": "https://docs.google.com/presentation/d/1tF8OmJYQsmO8Pe_HZWmJZXvn0NzzRV3QUOwNMaswE_w/edit?usp=sharing",
+      "slides": "https://docs.google.com/presentation/d/1tF8OmJYQsmO8Pe_HZWmJZXvn0NzzRV3QUOwNMaswE_w/embed?start=false&loop=false&delayms=3000",
+      "video": "https://www.youtube.com/embed/YAZj-Tz-3j4"
+    },
+    {
+      "id": "rdbms",
+      "name": "12 Tips to Improve Your Modern Relational Database Design",
+      "link": "https://docs.google.com/presentation/d/1IQeHJptGnU9TWCror8f5JPH1hC6xSBBTk8rRvcj_GOc/edit?usp=sharing",
+      "slides": "https://docs.google.com/presentation/d/1IQeHJptGnU9TWCror8f5JPH1hC6xSBBTk8rRvcj_GOc/embed?start=false&loop=false&delayms=3000"
+    },
     {
       "id": "unit-testing",
       "name": "Delivering Quality Software with Modern Unit Testing Techniques",
