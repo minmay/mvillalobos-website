@@ -1,6 +1,6 @@
 {
   "name": "Marco Antonio Villalobos, Jr.",
-  "objective": "I want to be instrumental in the production of software that makes massive amounts of money.",
+  "objective": "Produce software applications that are critical to a company’s monetization efforts. More specifically, I want to fulfill a senior role [architect, technical lead] in the production of software applications.  I am also open to continuing my work as a remote developer, consultant, or full-time employee.",
   "email": "mvillalobos@kineteque.com",
   "mobile": "Furnished Upon Request",
   "history": [
@@ -14,6 +14,8 @@
       "title": "Sr. Software Engineer",
       "prologue": "I developed software components for land-based table and cabinet regulated gaming systems. These were closed systems, with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol.",
       "accomplishments": [
+        "Implemented a streaming data statistical calculator that could compute all basic statistics, the Runs Test for Randomness, and the Autocorrelation Test for Randomness. This statistical application could work on unlimited size datasets with any range of numbers. Input files were over 10 GB gigabytes.",
+        "Implemented high-performance, low-latency TCP/IP random number server. This server was implemented with Java, JDK 1.8, used NIO and Netty, and required me to write my own application layer protocol.",
         "Provided architectural guidance in the development of RESTful systems that used Java, JDK 1.8, Spring Boot, Maven, thread-safe domain objects, data-access objects, services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, PostgreSQL, and Microsoft SQL Server.",
         "Implemented a command-line tool with Java and Git that analyzed a Maven project and checked out all of its dependencies within the organization in the order that they must be built or tagged. This project leveraged Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of breadth first traversal and depth first traversal.",
         "Solved many of the concurrency problems that were required for a functional product. I also used this opportunity to mentor the staff on good concurrency practices.",
@@ -246,7 +248,7 @@
     },
     {
       "id": "rdbms",
-      "name": "12 Tips to Improve Your Modern Relational Database Design",
+      "name": "Improving Your Relational Database Architecture",
       "link": "https://docs.google.com/presentation/d/1IQeHJptGnU9TWCror8f5JPH1hC6xSBBTk8rRvcj_GOc/edit?usp=sharing",
       "slides": "https://docs.google.com/presentation/d/1IQeHJptGnU9TWCror8f5JPH1hC6xSBBTk8rRvcj_GOc/embed?start=false&loop=false&delayms=3000"
     },
