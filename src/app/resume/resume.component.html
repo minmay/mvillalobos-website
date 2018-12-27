@@ -12,24 +12,24 @@
 
           <p></p></dd>
 
-        <template [ngIf]="resume.objective">
+        <ng-template [ngIf]="resume.objective">
           <dt id="objective">Objective</dt>
           <dd>{{resume.objective}}<p></p></dd>
-        </template>
+        </ng-template>
 
         <dt id="work-history">Work History</dt>
         <dd>
           <table class="table">
-            <template ngFor let-experience [ngForOf]="resume.history">
+            <ng-template ngFor let-experience [ngForOf]="resume.history">
               <resume-entry id="{{experience.id}}" [entry]="experience"></resume-entry>
-            </template>
+            </ng-template>
           </table>
         </dd>
 
         <dt id="education">Education</dt>
         <dd>
           <table class="table">
-            <template ngFor let-experience [ngForOf]="resume.education">
+            <ng-template ngFor let-experience [ngForOf]="resume.education">
               <tr *ngIf="experience.logo">
                 <td colspan="3"><img class="education-img" src="assets/resume/images/{{experience.logo}}" border="0"/>
 
@@ -45,31 +45,31 @@
                   <hr/>
                 </td>
               </tr>
-            </template>
+            </ng-template>
           </table>
         </dd>
 
         <dt id="skills">Skills</dt>
         <dd>
-          <template ngFor let-skill [ngForOf]="resume.skills">
+          <ng-template ngFor let-skill [ngForOf]="resume.skills">
             <p>{{skill}}</p>
-          </template>
+          </ng-template>
           <hr/>
         </dd>
 
         <dt id="presentations">Presentations</dt>
         <dd>
-          <template ngFor let-presentation [ngForOf]="resume.presentations">
+          <ng-template ngFor let-presentation [ngForOf]="resume.presentations">
             <p><a href="{{presentation.link}}" target="_blank">{{presentation.name}}</a></p>
-          </template>
+          </ng-template>
         </dd>
 
         <dt id="affiliations">Affiliations</dt>
         <dd>
           <table class="table">
-            <template ngFor let-experience [ngForOf]="resume.affiliations">
+            <ng-template ngFor let-experience [ngForOf]="resume.affiliations">
               <resume-entry [entry]="experience"></resume-entry>
-            </template>
+            </ng-template>
           </table>
         </dd>
       </dl>

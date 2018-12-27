@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { RouterModule }   from '@angular/router';
+import { HttpClientModule }    from '@angular/common/http';
 
-import './rxjs-extensions';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 import { PresentationsComponent } from './resume/presentations/presentations.component';
@@ -22,22 +22,9 @@ import { ResumeService } from './resume/resume.service';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    HttpModule,
-    RouterModule.forRoot([
-      {
-        path: '',
-        component: ResumeComponent
-      },
-      {
-        path: 'presentations',
-        component: PresentationsComponent
-      },
-      {
-        path: 'about',
-        component: AboutComponent
-      }
-    ])
+    HttpClientModule
   ],
   providers: [ResumeService],
   bootstrap: [AppComponent]

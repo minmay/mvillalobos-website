@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { ResumeService } from './resume.service';
 import { Resume } from './resume.model';
 
@@ -22,7 +21,7 @@ export class ResumeComponent implements OnInit {
   getResume(): void {
     this.resumeService
       .findResume()
-      .then(resume => this.resume = resume);
+      .subscribe(resume => this.resume = resume);
   }
 
 }

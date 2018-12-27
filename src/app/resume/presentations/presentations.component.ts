@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 
 import { ResumeService } from '../resume.service';
@@ -32,7 +31,7 @@ export class PresentationsComponent implements OnInit {
   getPresentations(): void {
     this.resumeService
       .findResume()
-      .then(resume => this.presentations = resume.presentations);
+      .subscribe(resume => this.presentations = resume.presentations);
   }
 
   onSelectPresentation(presentation: Presentation): void {
