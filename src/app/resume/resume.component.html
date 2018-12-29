@@ -26,7 +26,7 @@
         <dd>
           <table class="table">
             <ng-template ngFor let-experience [ngForOf]="resume.history">
-              <resume-entry id="{{experience.id}}" [entry]="experience"></resume-entry>
+              <app-resume-entry id="{{experience.id}}" [entry]="experience"></app-resume-entry>
             </ng-template>
           </table>
         </dd>
@@ -73,7 +73,7 @@
         <dd>
           <table class="table">
             <ng-template ngFor let-experience [ngForOf]="resume.affiliations">
-              <resume-entry [entry]="experience"></resume-entry>
+              <app-resume-entry [entry]="experience"></app-resume-entry>
             </ng-template>
           </table>
         </dd>
