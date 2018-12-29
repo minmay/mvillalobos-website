@@ -1,5 +1,11 @@
-import { ResumeEntry } from './entry/resume-entry.model';
-
-export interface Employment extends ResumeEntry {
-
+export interface Employment {
+  id: string;
+  name: string;
+  location: string;
+  logo: string;
+  start: string;
+  end: string;
+  title: string;
+  prologue: string;
+  accomplishments?: string[];
 }
