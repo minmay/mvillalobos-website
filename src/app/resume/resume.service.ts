@@ -6,13 +6,13 @@ import { Resume } from './resume.model';
 @Injectable()
 export class ResumeService {
 
-  private resumeUrl = 'assets/resume/MVillalobosWorkHistory.json'
+  private resumeUrl = 'assets/resume/MVillalobosWorkHistory.json';
 
-  constructor(private httpClient:HttpClient) {
+  constructor(private httpClient: HttpClient) {
   }
 
-  findResume():Observable<Resume> {
-    return this,this.httpClient.get<Resume>(this.resumeUrl);
+  findResume(): Observable<Resume> {
+    return this.httpClient.get<Resume>(this.resumeUrl);
   }
 
 }
