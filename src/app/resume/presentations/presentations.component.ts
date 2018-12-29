@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
+import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 
 import { ResumeService } from '../resume.service';
-import { Resume } from '../resume.model';
 import { Presentation } from '../presentation.model';
 
 @Component({
-  selector: 'presentations',
+  selector: 'app-presentations',
   templateUrl: './presentations.component.html',
   styleUrls: ['./presentations.component.css']
 })
