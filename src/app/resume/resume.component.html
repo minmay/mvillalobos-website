@@ -12,6 +12,11 @@
 
           <p></p></dd>
 
+        <ng-template [ngIf]="resume.introduction">
+          <dt id="introduction">Introduction</dt>
+          <dd>{{resume.introduction}}<p></p></dd>
+        </ng-template>
+
         <ng-template [ngIf]="resume.objective">
           <dt id="objective">Objective</dt>
           <dd>{{resume.objective}}<p></p></dd>
