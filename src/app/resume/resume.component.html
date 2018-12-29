@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="resume">
   <div class="page-header">
     <h1 id="resume">{{resume.name}}
       <small>Resume</small>
@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-md-9">
-      <dl class="dl-horizontal" *ngIf="resume">
+      <dl class="dl-horizontal">
         <dt id="email">Email</dt>
         <dd><a href="mailto:{{resume.email}}">{{resume.email}}</a>
 
