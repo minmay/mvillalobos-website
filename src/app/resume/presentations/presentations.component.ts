@@ -39,7 +39,7 @@ export class PresentationsComponent implements OnInit {
     this.onSelectSlides();
   }
 
-  onSelectSlides() : void {
+  onSelectSlides(): void {
     this.mediaUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedPresentation.slides);
     this.showSlides = true;
     this.showVideo = false;
