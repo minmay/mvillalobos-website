@@ -3,7 +3,7 @@ import { ResumeService } from './resume.service';
 import { Resume } from './resume.model';
 
 @Component({
-  selector: 'resume',
+  selector: 'app-resume',
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
 })
