@@ -78,7 +78,7 @@
       "start": "Nov 2010",
       "end": "Apr 2011",
       "title": "Sr. Software Engineer / Display Ad Serving",
-      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" framework for creating RESTFul integration services from existing database queries."
+      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" framework for creating RESfFul integration services from existing database queries."
     },
     {
       "id": "fox-audience-network",
@@ -224,24 +224,24 @@
     }
   ],
   "skills": [
-    "Java, JEE, J2EE, EJB, JDBC, JPA, JAAS",
-    "Servlet, JSP, JSF, JAX-RS, JAX-WS",
-    "Web Services, REST, SOAP, Oauth 2, JSON",
-    "The Spring Framework, Spring Boot, Spring MVC, Spring Security, Inversion of Control, Dependency Injection, AOP",
+    "Java, JEE, J2EE, EJB, JDBC, JPA, and JAAS.",
+    "Servlet, JSP, JSF, JAX-RS, and JAX-WS.",
+    "Web Services, REST, SOAP, Oauth 2, and JSON.",
+    "The Spring Framework, Spring Boot, Spring MVC, Spring Security, Inversion of Control, Dependency Injection, and AOP.",
     "Network Programming, Socket Programming, NIO, Netty, and Protocol Buffers.",
-    "RDBMS, PostgreSQL, Oracle, DB2, Microsoft SQL Server, MySql, SQLite, H2, SQL",
-    "NoSQL, Phoenix, HBase, Cassandra, DynamoDB, Hadoop, Map Reduce, Lucene",
-    "Concurrency Programming, Thread-Safety, Java Util Concurrent",
+    "RDBMS, PostgreSQL, Oracle, DB2, Microsoft SQL Server, MySql, SQLite, H2, and SQL.",
+    "NoSQL, Phoenix, HBase, Cassandra, DynamoDB, Hadoop, Map Reduce, and Lucene.",
+    "Concurrency Programming, Thread-Safety, and Java Util Concurrent.",
     "Docker, and Docker Compose.",
-    "Cloud Computing, Distributed Computing, EC2.",
-    "Python, Flask, SQL Alchemy, Authlib, PyEnv, Virtual Env.",
+    "Cloud Computing, Distributed Computing, and EC2.",
+    "Python, Flask, SQL Alchemy, Authlib, PyEnv, and Virtual Env.",
     "Ruby, JRuby, and Ruby on Rails.",
-    "JavaScript, ECMAScript, Angular, TypeScript, JQuery.",
-    "CSS, Bootstrap",
+    "JavaScript, ECMAScript, Angular, TypeScript, and JQuery.",
+    "CSS, and Bootstrap.",
     "Linux, Open LDAP, Bash, Awk, and sometimes PERL.",
     "Version Control, Git, Subversion, and CVS.",
-    "Package Management, Maven, Gradle, NPM, Bundler.",
-    "Software Architecture, Attribute Driven Design 3.0, UML, Quality Attributes, Architecture Patterns, Software Engineering.",
+    "Package Management, Maven, Gradle, NPM, and Bundler.",
+    "Software Architecture, Attribute Driven Design 3.0, UML, Quality Attributes, Architecture Patterns, and Software Engineering.",
     "Agile, Scrum, Use Cases, and Stories.",
     "Verbal, written, and group presentations."
   ],
@@ -303,7 +303,7 @@
     },
     {
       "id": "jaxrs",
-      "name": "RESTFul JSON Web Services with Jersey and Jackson",
+      "name": "RESTful JSON Web Services with Jersey and Jackson",
       "link": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/pub?start=false&loop=false&delayms=3000",
       "slides": "https://docs.google.com/presentation/d/12bC2ViEcTVIHu1cJB5YhmeMw5_3jJIvREs5I5NNDJhY/embed?start=false&loop=false&delayms=3000"
     },
@@ -322,7 +322,7 @@
       "start": "May, 2004",
       "end": "Present",
       "title": "President",
-      "prologue": "Software Developer community leader. I maanged the Los Angeles Java User's Group since 2004. This involves organizing meetings, choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website."
+      "prologue": "Software Developer community leader. I managed the Los Angeles Java User's Group since 2004. This involves organizing meetings, choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website."
     }
   ]
 }
