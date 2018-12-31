@@ -1,6 +1,6 @@
 {
   "name": "Marco A. Villalobos",
-  "introduction": "My resume is my own code. Hands-on Software Architect and Software Engineer. Expert Java programmer. Leader within the Software Engineering community. Mentor. Experienced with Python and Ruby. Ad Tech expert. Love's Ad Tech, but will work in any industry. Enjoys distributed software systems, network programming, and concurrency programming.",
+  "introduction": "This resume is my own code. Hands-on Software Architect and Software Engineer. Expert Java programmer. Leader within the Software Developer community. Mentor. Experienced with Python and Ruby. Ad Tech expert. Love's Ad Tech, but will work in any industry. Enjoys distributed software systems, network programming, and concurrency programming.",
   "objective": "Seeking roles as a Software Architect, or Principal Software Engineer. Works either Full-Time or Corp-to-Corp. Open to remote.",
   "email": "mvillalobos@kineteque.com",
   "mobile": "Furnished Upon Request",
@@ -13,13 +13,13 @@
       "start": "Nov 2015",
       "end": "Present",
       "title": "Sr. Software Engineer",
-      "prologue": "I develop software for casino gaming systems (Las Vegas). These are skill based casino video games with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol. My role was software architecture, hands-on development, mentoring, and technical leadership.",
+      "prologue": "I develop software for casino gaming systems (Las Vegas). These are skill-based casino video games with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol. My role was software architecture, hands-on development, mentoring, and technical leadership.",
       "accomplishments": [
         "Architecture and development of RESTful APIs with Java, JDK 1.8, and Spring Boot. I designed our layered-architecture, package structure, and build. Developed and mentored staff with the practice of concurrency programming, domain driven design, and the Spring Framework. These projects used services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, Flyway database migrations, PostgreSQL, and Microsoft SQL Server.",
-        "Implemented a streaming data statistical calculator that could test for randomness with the Runs Test, and Autocorrelation Test. It accepted unlimited size datasets with any range of numbers. Input files were over 10 GB. Test were designed with only academic papers as requirements.",
+        "Implemented a streaming data statistical calculator that could test for randomness with the Runs Test, and Autocorrelation Test. It accepted unlimited size datasets with any range of numbers. Input files were over 10 GB. Statistical models were designed with only academic papers as requirements.",
         "Implemented high-performance, low-latency TCP/IP applications with Java 8, NIO and Netty. I designed and implemented our TCP/IP application layer protocols.",
         "Implemented a command-line tool with Java and Git that analyzed a Maven project and checked out all of its dependencies within the organization in the order that they must be built or tagged. This project used Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of breadth first traversal and depth first traversal.",
-        "Architecture and development of a full-stack system. Delivered complete software architecture with Attribute Driven Design methodology (ADD 3.0). From the top, UI was written with Angular 6 and Bootstrap. RESTful API was written with Python 2, Flask, and SQL Alchemy. OAuth 2 Authorization server was written with Python 2, FLask, Authlib, Open LDAP, and SQL Alchemy."
+        "Architecture and development of a full-stack system. Delivered complete software architecture with Attribute Driven Design methodology (ADD 3.0). From the top, UI was written with Angular 6 and Bootstrap. RESTful API was written with Python 2, Flask, and SQL Alchemy. OAuth 2 Authorization server was written with Python 2, Flask, Authlib, Open LDAP, and SQL Alchemy."
       ]
     },
     {
@@ -30,11 +30,11 @@
       "start": "Apr 2015",
       "end": "Nov 2015",
       "title": "Sr. Software Engineer",
-      "prologue": "Provided architecture to transition from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. My role was software architecture, hands-on development, mentoring, and technical leadership.",
+      "prologue": "Provided architecture to pivot from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. My role was software architecture, hands-on development, mentoring, and technical leadership.",
       "accomplishments": [
         "I developed database migration scripts to provide referential integrity and auditing functionality to a production PostgreSQL database. These migrations also fixed data anomalies.",
         "I developed high-performance multi-threaded ETL data extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
-        "I implemented an internal Ruby GEM called \"Badger\" that simplified developing high-performing database batch programs. \"Badger\" compared to an MRI Ruby application that took 18 hours to only took 15 minutes with JRuby and badger \"Badger.\""
+        "I implemented an internal Ruby GEM called \"Badger\" that simplified developing high-performing database batch programs. \"Badger\" compared to an MRI Ruby application reduced execution time from 18 hours to only 15 minutes."
       ]
     },
     {
@@ -65,7 +65,7 @@
       "prologue": "I was Lead Developer of SupplyFrame Media's flagship aggregate e-commerce platform. This involved leading a small development team. Our team accomplished the following:",
       "accomplishments": [
         "Lead the integration of additional vendors into our aggregate e-commerce platform. This project used Tomcat, Struts 2, Spring, and PostgreSQL.",
-        "Lead the development of full-text search capabilities with Lucene onto our aggregate e-commerce platform.",
+        "Lead the development of full-text search capabilities with Lucene into our aggregate e-commerce platform.",
         "Lead the development of RESTful APIs with JAX-RS.",
         "I implemented Client Server applications and TCP/IP application layer protocols with NIO, Netty, and Protocol Buffers."
       ]
@@ -78,7 +78,7 @@
       "start": "Nov 2010",
       "end": "Apr 2011",
       "title": "Sr. Software Engineer / Display Ad Serving",
-      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" technology for creating RESTFul integration services from database queries."
+      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" framework for creating RESTFul integration services from existing database queries."
     },
     {
       "id": "fox-audience-network",
@@ -88,11 +88,11 @@
       "start": "Jun 2007",
       "end": "Oct 2010",
       "title": "Sr. Software Engineer / Monetization",
-      "prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day.  Highlights of my accomplishments include the following:",
+      "prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day. Highlights of my accomplishments include the following:",
       "accomplishments": [
-        "I lead the implementation, and supported a robust, mission-critical high-performance extract-driven data-import process responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques we were able to achieve approximately 2000 transactions per second.",
+        "I lead the development of a robust mission-critical high-performance extract-driven data-import process responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques I was able to achieve approximately 2000 transactions per second.",
         "I assisted our team on our Ad Server (the most important and demanding component in our system) to implement 2nd Price Auction, and real-time cookie encryption / decryption routines.",
-        "I developed and supported the integration-web services that allowed for the MyAds and Publisher Network Portal products to traffic and manage ad campaigns on the FAN Ad Server. These products used JAX-WS, JAXB, Spring, Hibernate, and DB2.",
+        "I developed the web services that allowed for the MyAds and Publisher Network Portal products to traffic and manage ad campaigns on the FAN Ad Server. These products used JAX-WS, JAXB, Spring, Hibernate, and DB2.",
         "I lead the development of an XML data-import process that automated the creation of display ads. Using a combination of DOM, StAX, and JDBC batch programming, I was able to process 1 GB XML files in under a minute."
       ]
     },
@@ -153,7 +153,7 @@
       "start": "Apr, 2003",
       "end": "Oct, 2003",
       "title": "Consultant",
-      "prologue": "I delivered user-interface prototypes for an e-commerce site that sold linen products."
+      "prologue": "I implemented user-interface prototypes for an e-commerce site that sold linen products."
     },
     {
       "id": "med-exec-international",
@@ -224,24 +224,45 @@
     }
   ],
   "skills": [
-    "Java, EJB, JSF, JDBC, JPA, JSP, Servlet, JAX-RS, JAX-WS, SOAP, Web Services, REST, OAuth 2, JSON, Jersey, Jackson, JAAS, Concurrency Programming, Thread Safety.",
+    "Java, JEE, J2EE, EJB, JDBC, JPA, JAAS",
+    "Servlet, JSP, JSF, JAX-RS, JAX-WS",
+    "Web Services, REST, SOAP, Oauth 2, JSON",
+    "The Spring Framework, Spring Boot, Spring MVC, Spring Security, Inversion of Control, Dependency Injection, AOP",
     "Network Programming, Socket Programming, NIO, Netty, and Protocol Buffers.",
-    "The Spring Framework, Spring Boot, Spring Security, and AOP.",
+    "RDBMS, PostgreSQL, Oracle, DB2, Microsoft SQL Server, MySql, SQLite, H2, SQL",
+    "NoSQL, Phoenix, HBase, Cassandra, DynamoDB, Hadoop, Map Reduce, Lucene",
+    "Concurrency Programming, Thread-Safety, Java Util Concurrent",
     "Docker, and Docker Compose.",
-    "Hadoop, Cassandra, Phoenix, HBase, Map Reduce, and DynamoDB.",
-    "SQL, Oracle, DB2, MySQL, and PostgreSQL.",
-    "Cloud Computing, Distributed Computing, and EC2.",
-    "Python, Flask, SQL Alchemy, and Authlib.",
+    "Cloud Computing, Distributed Computing, EC2.",
+    "Python, Flask, SQL Alchemy, Authlib, PyEnv, Virtual Env.",
     "Ruby, JRuby, and Ruby on Rails.",
-    "HTML5, Angular, TypeScript, JQuery, and Bootstrap.",
-    "Linux, Open LDAP, bash, awk, and I occasionally write with PERL.",
-    "Git, Subversion, and CVS.",
-    "Maven, Gradle, NPM, Bundler, PyEnv, and Virtual Env.",
-    "Software Architecture, Attribute Driven Design 3.0, UML modeling, and Software Engineering.",
+    "JavaScript, ECMAScript, Angular, TypeScript, JQuery.",
+    "CSS, Bootstrap",
+    "Linux, Open LDAP, Bash, Awk, and sometimes PERL.",
+    "Version Control, Git, Subversion, and CVS.",
+    "Package Management, Maven, Gradle, NPM, Bundler.",
+    "Software Architecture, Attribute Driven Design 3.0, UML, Quality Attributes, Architecture Patterns, Software Engineering.",
     "Agile, Scrum, Use Cases, and Stories.",
     "Verbal, written, and group presentations."
   ],
+  "skills-visualization": {
+    "skills": [
+      { "Java": [
+        { "JEE": [ "J2EE", "EJB", "JDBC", "JPA", "JAAS", { "Servlet": [ "JSP", "JSF", "JAX-RS", "JAX-WS" ] } ] },
+        { "The Spring Framwork": [ "Spring Boot", "Spring Security", "Dependency Injection", "AOP"] }
+      ] },
+      { "RDBMS": [ "PostgreSQL", "Oracle", "MySQL", "DB2", "SQL" ] },
+      { "NoSQL": [ "Phoenix", "HBase", "Cassandra", "DynamoDB", "Hadoop", "Map Reduce" ] }
+    ]
+  },
   "presentations": [
+    {
+      "id": "bad-things-happen",
+      "name": "Bad Things Happen - Recognizing the Common Pitfalls in Java Concurrency Programming",
+      "link": "https://docs.google.com/presentation/d/17aKJfGZ6WbzkZyfiCzmt3ReHdKvqvn7yrSp_MOvBoHg/edit?usp=sharing",
+      "slides": "https://docs.google.com/presentation/d/17aKJfGZ6WbzkZyfiCzmt3ReHdKvqvn7yrSp_MOvBoHg/embed?start=false&loop=false&delayms=3000",
+      "video": "https://www.youtube.com/embed/5P1pbu63Elo"
+    },
     {
       "id": "spring-boot",
       "name": "Get to Production Faster with Spring Boot",
@@ -301,7 +322,7 @@
       "start": "May, 2004",
       "end": "Present",
       "title": "President",
-      "prologue": "I have managed the Los Angeles Java User's Group since 2004. This involves choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website."
+      "prologue": "Software Developer community leader. I maanged the Los Angeles Java User's Group since 2004. This involves organizing meetings, choosing relevant technical topics, finding presenters, assuring that we have a meeting location, hosting and moderating the meeting, promoting relationships between attendees and recruiters, and maintaining the website."
     }
   ]
 }
