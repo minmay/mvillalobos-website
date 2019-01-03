@@ -30,7 +30,7 @@
       "start": "Apr 2015",
       "end": "Nov 2015",
       "title": "Sr. Software Engineer",
-      "prologue": "Provided architecture to pivot from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. My role was software architecture, hands-on development, mentoring, and technical leadership.",
+      "prologue": "I provided the architecture to pivot from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. My role was software architecture, hands-on development, mentoring, and technical leadership.",
       "accomplishments": [
         "I developed database migration scripts to provide referential integrity and auditing functionality to a production PostgreSQL database. These migrations also fixed data anomalies.",
         "I developed high-performance multi-threaded ETL data extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
@@ -78,7 +78,7 @@
       "start": "Nov 2010",
       "end": "Apr 2011",
       "title": "Sr. Software Engineer / Display Ad Serving",
-      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" framework for creating RESfFul integration services from existing database queries."
+      "prologue": "I assisted in the technology transfer of the Fox Audience Network (FAN) Ad Server following the Rubicon Project's acquisition of FAN. I also lead the development of an \"agile\" framework for creating RESTful integration services from existing database queries."
     },
     {
       "id": "fox-audience-network",
