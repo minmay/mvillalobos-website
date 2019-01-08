@@ -33,7 +33,7 @@
       "prologue": "I provided the architecture to pivot from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. My role was software architecture, hands-on development, mentoring, and technical leadership.",
       "accomplishments": [
         "I developed database migration scripts to provide referential integrity and auditing functionality to a production PostgreSQL database. These migrations also fixed data anomalies.",
-        "I developed high-performance multi-threaded ETL data extraction script that introspected 900,000 remote records and locally persisted 7 million database records and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
+        "I developed high-performance multi-threaded ETL data-pipeline that transferred 900,000 records, persisted 7 million database records, and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
         "I implemented an internal Ruby GEM called \"Badger\" that simplified developing high-performing database batch programs. \"Badger\" compared to an MRI Ruby application reduced execution time from 18 hours to only 15 minutes."
       ]
     },
@@ -51,7 +51,7 @@
         "I developed stateless client libraries for HTTP REST, SFTP, and FTP that were used within our SOA components.",
         "I developed Docker containers for the purpose of integration testing.",
         "I developed a RESTful distributed file system with Netty and Cassandra.",
-        "I developed high-performing data-pipeline services that can accept GB sized XML payloads and batch the data into a database. This product used Spring Boot, JAX-RS, StAX, and JDBC."
+        "I developed high-performing data-pipelines that transferred GB order sized XML payloads and batched the information into a database. This product used Spring Boot, JAX-RS, StAX, and JDBC."
       ]
     },
     {
@@ -90,7 +90,7 @@
       "title": "Sr. Software Engineer / Monetization",
       "prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day. Highlights of my accomplishments include the following:",
       "accomplishments": [
-        "I lead the development of a robust mission-critical high-performance extract-driven data-import process responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques I was able to achieve approximately 2000 transactions per second.",
+        "I lead the development of a robust mission-critical high-performance data-pipeline responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques I was able to achieve approximately 2000 transactions per second.",
         "I assisted our team on our Ad Server (the most important and demanding component in our system) to implement 2nd Price Auction, and real-time cookie encryption / decryption routines.",
         "I developed the web services that allowed for the MyAds and Publisher Network Portal products to traffic and manage ad campaigns on the FAN Ad Server. These products used JAX-WS, JAXB, Spring, Hibernate, and DB2.",
         "I lead the development of an XML data-import process that automated the creation of display ads. Using a combination of DOM, StAX, and JDBC batch programming, I was able to process 1 GB XML files in under a minute."
