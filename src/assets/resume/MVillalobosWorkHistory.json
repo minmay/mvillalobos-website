@@ -1,24 +1,37 @@
 {
   "name": "Marco A. Villalobos",
   "introduction": "This resume is my own code. Hands-on Software Architect and Software Engineer. Expert Java programmer. Leader within the Software Developer community. Mentor. Experienced with Python and Ruby. Ad Tech expert. Love's Ad Tech, but will work in any industry. Enjoys distributed software systems, network programming, and concurrency programming.",
-  "objective": "Seeking roles as a Software Architect, or Principal Software Engineer. Works either Full-Time or Corp-to-Corp. Open to remote.",
+  "objective": "Seeking roles as a Software Architect, or Principal Software Engineer. Works either Full-Time or Corp-to-Corp. Open to and experienced with remote development.",
   "email": "mvillalobos@kineteque.com",
   "mobile": "Furnished Upon Request",
   "history": [
+    {
+      "id": "disney-leeline",
+      "name": "Walt Disney - Direct to Consumer & International",
+      "logo": "dtci.png",
+      "location": "Glendale, CA",
+      "start": "Apr 2019",
+      "end": "Present",
+      "prologue": "Integrating Disney’s Direct to Consumer Streaming Technology assets with RightsLine digital rights management PaaS",
+      "accomplishments": [
+        "Lead the development and provided software architecture for an episodic rights rules engine. I used Attribute Driven Design 3.0 to complete the architecture. This was a distributed software system that used the following technologies: Kotlin, Java, SQL Server, PostgreSQL, Spring Boot, AWS, Kubernetes, Docker.",
+        "Developed and maintained a variety of data-pipelines into the RightsLine digital rights management system."
+      ]
+    },
     {
       "id": "gamblit-gaming",
       "name": "Gamblit Gaming, LLC.",
       "logo": "gamblit.png",
       "location": "Glendale, CA",
       "start": "Nov 2015",
-      "end": "Present",
+      "end": "Jan 2019",
       "title": "Sr. Software Engineer",
-      "prologue": "I develop software for casino gaming systems (Las Vegas). These are skill-based casino video games with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol. My role was software architecture, hands-on development, mentoring, and technical leadership.",
+      "prologue": "I developed software for casino gaming systems (Las Vegas). These were skill-based casino video games with touch screens, bill validators, printers, that must interface with casinos via the Slot Accounting System (SAS) protocol. I provided software architecture, hands-on development, mentoring, and technical leadership.",
       "accomplishments": [
-        "Architecture and development of RESTful APIs with Java, JDK 1.8, and Spring Boot. I designed our layered-architecture, package structure, and build. Developed and mentored staff with the practice of concurrency programming, domain driven design, and the Spring Framework. These projects used services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, Flyway database migrations, PostgreSQL, and Microsoft SQL Server.",
-        "Implemented a streaming data statistical calculator that could test for randomness with the Runs Test, and Autocorrelation Test. It accepted unlimited size datasets with any range of numbers. Input files were over 10 GB. Statistical models were designed with only academic research papers as reference.",
+        "Architecture and development of RESTful APIs with Java, JDK 1.8, and Spring Boot. I designed our layered-architecture, package structure, and build. Developed and mentored staff on the practices of concurrency programming, domain driven design, and the Spring Framework. These projects used services, dependency injection, transaction management with AOP, JAX-RS with Jersey, JSON serialization with Jackson, JDBC, unit testing, integration testing, Docker, Docker Compose, Flyway database migrations, PostgreSQL, and Microsoft SQL Server.",
+        "Implemented a streaming data statistical calculator that tested for randomness with the Runs Test, and Autocorrelation Test. It accepted unlimited size datasets with any range of numbers. Input files were over 10 GB. Algorithms were designed with only academic research papers from NIST as reference.",
         "Implemented high-performance, low-latency TCP/IP applications with Java 8, NIO and Netty. I designed and implemented our TCP/IP application layer protocols.",
-        "Implemented a command-line tool with Java and Git that analyzed a Maven project and checked out all of its dependencies within the organization in the order that they must be built or tagged. This project used Maven Aether and JGIt libraries. This essentially was a graphing problem that required a combination of breadth first traversal and depth first traversal.",
+        "Implemented a command-line tool with Java and Git that analyzed a Maven project and checked out all of its dependencies within the organization in the order that they must be built or tagged. This project used Maven Aether and JGIt libraries.",
         "Architecture and development of a full-stack system. Delivered complete software architecture with Attribute Driven Design methodology (ADD 3.0). From the top, UI was written with Angular 6 and Bootstrap. RESTful API was written with Python 2, Flask, and SQL Alchemy. OAuth 2 Authorization server was written with Python 2, Flask, Authlib, Open LDAP, and SQL Alchemy."
       ]
     },
@@ -30,11 +43,11 @@
       "start": "Apr 2015",
       "end": "Nov 2015",
       "title": "Sr. Software Engineer",
-      "prologue": "I provided the architecture to pivot from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. My role was software architecture, hands-on development, mentoring, and technical leadership.",
+      "prologue": "I provided the architecture to pivot from a single Ruby on Rails application that provides subscription and shipping services towards a distributed system. This includes surveying the key components in the system, accounting for performance and scalability problems, and recommending technical solutions. I provided software architecture, hands-on development, mentoring, and technical leadership.",
       "accomplishments": [
         "I developed database migration scripts to provide referential integrity and auditing functionality to a production PostgreSQL database. These migrations also fixed data anomalies.",
         "I developed high-performance multi-threaded ETL data-pipeline that transferred 900,000 records, persisted 7 million database records, and uploaded 3.5 million files that accounted for 73.3 GB in S3. This task used JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS.",
-        "I implemented an internal Ruby GEM called \"Badger\" that simplified developing high-performing database batch programs. \"Badger\" compared to an MRI Ruby application reduced execution time from 18 hours to only 15 minutes."
+        "I implemented an internal Ruby GEM called \"Badger\" that simplified developing high-performing database batch programs. Badger compared to an ordinary MRI Ruby application reduced execution time from 18 hours to only 15 minutes."
       ]
     },
     {
@@ -45,7 +58,7 @@
       "start": "Oct 2012",
       "end": "Apr 2015",
       "title": "Sr. Software Engineer",
-      "prologue": "I worked remotely as a consultant as a Sr. Software Engineer on a variety of Service Oriented Architecture (SOA) projects. This includes developing and maintaining RESTful Web Services, batch processing systems, and web application development. Some of the more interesting tasks that I completed include the following:",
+      "prologue": "I worked remotely as a consultant on a variety of Service Oriented Architecture (SOA) projects. I developed and maintained RESTful Web Services, batch processing systems, and web applications.",
       "accomplishments": [
         "I helped our team develop custom SOA solutions, and also Mule SOA solutions. These solutions were mostly RESTful APIs that used Spring Boot, JAX-RS, and JPA.",
         "I developed stateless client libraries for HTTP REST, SFTP, and FTP that were used within our SOA components.",
@@ -62,7 +75,7 @@
       "start": "Apr 2011",
       "end": "Sep 2012",
       "title": "Lead Software Engineer",
-      "prologue": "I was Lead Developer of SupplyFrame Media's flagship aggregate e-commerce platform. This involved leading a small development team. Our team accomplished the following:",
+      "prologue": "I was Lead Developer of SupplyFrame Media's flagship aggregate e-commerce platform. This involved leading a small development team.",
       "accomplishments": [
         "Lead the integration of additional vendors into our aggregate e-commerce platform. This project used Tomcat, Struts 2, Spring, and PostgreSQL.",
         "Lead the development of full-text search capabilities with Lucene into our aggregate e-commerce platform.",
@@ -87,8 +100,8 @@
       "location": "Santa Monica, CA",
       "start": "Jun 2007",
       "end": "Oct 2010",
-      "title": "Sr. Software Engineer / Monetization",
-      "prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day. Highlights of my accomplishments include the following:",
+      "title": "Sr. Software Engineer / Display Ad Serving",
+      "prologue": "I was on a small team that developed and maintained a high-performance, optimizing display ad server that displayed at its peak 7 billion impressions per day.",
       "accomplishments": [
         "I lead the development of a robust mission-critical high-performance data-pipeline responsible for aggregating all display ad impressions. Using concurrency programming and database batch programming techniques I was able to achieve approximately 2000 transactions per second.",
         "I assisted our team on our Ad Server (the most important and demanding component in our system) to implement 2nd Price Auction, and real-time cookie encryption / decryption routines.",
@@ -134,7 +147,7 @@
       "start": "Aug, 2005",
       "end": "Oct, 2005",
       "title": "Sr. Principal Consultant",
-      "prologue": "I was on a small consulting team that performed on-site engagements. I assisted our client in refactoring to a Service Oriented Architecture."
+      "prologue": "I was on a small consulting team that performed on-site engagements. I assisted our client to re-architect to a Service Oriented Architecture."
     },
     {
       "id": "bt",
@@ -224,7 +237,7 @@
     }
   ],
   "skills": [
-    "Java, JEE, J2EE, EJB, JDBC, JPA, and JAAS.",
+    "Java, Kotlin, JEE, J2EE, EJB, JDBC, JPA, and JAAS.",
     "Servlet, JSP, JSF, JAX-RS, and JAX-WS.",
     "Web Services, REST, SOAP, Oauth 2, and JSON.",
     "The Spring Framework, Spring Boot, Spring MVC, Spring Security, Inversion of Control, Dependency Injection, and AOP.",
@@ -232,7 +245,7 @@
     "RDBMS, PostgreSQL, Oracle, DB2, Microsoft SQL Server, MySql, SQLite, H2, and SQL.",
     "NoSQL, Phoenix, HBase, Cassandra, DynamoDB, Hadoop, Map Reduce, and Lucene.",
     "Concurrency Programming, Thread-Safety, and Java Util Concurrent.",
-    "Docker, and Docker Compose.",
+    "Kubernetes, Docker, Docker Compose, Amazon EKS.",
     "Cloud Computing, Distributed Computing, and EC2.",
     "Python, Flask, SQL Alchemy, Authlib, PyEnv, and Virtual Env.",
     "Ruby, JRuby, and Ruby on Rails.",

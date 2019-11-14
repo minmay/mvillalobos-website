@@ -4,3 +4,7 @@
   max-width: 250px;
   max-height: 50px;
 }
+
+.resume-entry-info {
+  min-width: 400px;
+}
