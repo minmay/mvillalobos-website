@@ -27,6 +27,12 @@ import { ResumeService } from './resume/resume.service';
     HttpClientModule
   ],
   providers: [ResumeService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+    AboutComponent,
+    ResumeComponent,
+    PresentationsComponent,
+    ResumeEntryComponent
+  ]
 })
 export class AppModule { }

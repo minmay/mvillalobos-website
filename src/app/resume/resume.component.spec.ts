@@ -4,6 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ResumeComponent } from './resume.component';
+import {ResumeService} from './resume.service';
 
 describe('ResumeComponent', () => {
   let component: ResumeComponent;
@@ -11,7 +12,8 @@ describe('ResumeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeComponent ]
+      declarations: [ ResumeComponent ],
+      providers: [ResumeService]
     })
     .compileComponents();
   }));
@@ -21,6 +23,8 @@ describe('ResumeComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
+
+
 
   it('should create', () => {
     expect(component).toBeTruthy();
