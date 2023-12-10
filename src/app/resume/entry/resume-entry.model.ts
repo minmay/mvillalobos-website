@@ -1,3 +1,5 @@
+import { Description } from "../description.model";
+
 export interface ResumeEntry {
     id: string;
     name: string;
@@ -6,6 +8,5 @@ export interface ResumeEntry {
     start: string;
     end: string;
     title: string;
-    prologue: string;
-    accomplishments?: string[];
+    description: Description[];
 }

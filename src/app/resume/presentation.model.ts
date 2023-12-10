@@ -1,8 +1,8 @@
 export interface Presentation {
     id: string;
     name: string;
-    description?: string;
+    description: string;
     link: string;
     slides: string;
-    video?: string;
+    video: string;
 }

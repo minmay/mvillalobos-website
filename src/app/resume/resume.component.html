@@ -14,12 +14,12 @@
 
         <ng-template [ngIf]="resume.introduction">
           <dt id="introduction">Introduction</dt>
-          <dd>{{resume.introduction}}<p></p></dd>
+          <dd><p>{{resume.introduction}}</p></dd>
         </ng-template>
 
         <ng-template [ngIf]="resume.objective">
           <dt id="objective">Objective</dt>
-          <dd>{{resume.objective}}<p></p></dd>
+          <dd><p *ngFor="let objective of resume.objective">{{objective}}</p></dd>
         </ng-template>
 
         <dt id="work-history">Work History</dt>
@@ -34,16 +34,16 @@
         <dt id="education">Education</dt>
         <dd>
           <table class="table">
-            <ng-template ngFor let-experience [ngForOf]="resume.education">
-              <tr *ngIf="experience.logo">
-                <td colspan="3"><img class="education-img" src="assets/resume/images/{{experience.logo}}" border="0"/>
+            <ng-template ngFor let-school [ngForOf]="resume.education">
+              <tr *ngIf="school.logo">
+                <td colspan="3"><img class="education-img" src="assets/resume/images/{{school.logo}}" border="0"/>
 
                   <p></p></td>
               </tr>
               <tr>
-                <td>{{experience.start}} - {{experience.end}}</td>
-                <td>{{experience.name}}</td>
-                <td>{{experience.degree}}</td>
+                <td>{{school.start}} - {{school.end}}</td>
+                <td>{{school.name}}</td>
+                <td>{{school.degree}}</td>
               </tr>
               <tr>
                 <td colspan="3">
@@ -72,8 +72,8 @@
         <dt id="affiliations">Affiliations</dt>
         <dd>
           <table class="table">
-            <ng-template ngFor let-experience [ngForOf]="resume.affiliations">
-              <app-resume-entry [entry]="experience"></app-resume-entry>
+            <ng-template ngFor let-affiliation [ngForOf]="resume.affiliations">
+              <app-resume-entry [entry]="affiliation"></app-resume-entry>
             </ng-template>
           </table>
         </dd>
@@ -85,8 +85,8 @@
           Microsoft Word</a><br>
         <span class="mdi mdi-file-pdf"></span><a href="assets/resume/MVillalobosWorkHistory.pdf">
           PDF</a><br>
-        <span class="mdi mdi-json"></span><a href="assets/resume/MVillalobosWorkHistory.json">
-          JSON</a></div>
+        <span class="mdi mdi-json"></span><a href="assets/resume/MVillalobosWorkHistory.yaml">
+          YAML</a></div>
 
     </div>
   </div>

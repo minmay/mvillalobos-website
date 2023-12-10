@@ -4,7 +4,12 @@
   </div>
   <div class="btn-toolbar" role="toolbar" aria-label="toolbar">
     <div class="btn-group" role="group" aria-label="presentations">
-      <button class="btn btn-default dropdown-toggle" type="button" id="presentations" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn btn-default dropdown-toggle"
+              type="button"
+              id="presentations"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
         Presentations
         <span class="caret"></span>
       </button>
@@ -18,19 +23,19 @@
         </li>
       </ul>
     </div>
-    <div *ngIf="selectedPresentation" class="btn-group" role="group" aria-label="options">
-      <button *ngIf="!selectedPresentation.video" disabled type="button" class="btn btn-default"><span class="mdi mdi-google-drive" aria-hidden="true"></span> Slides</button>
-      <button *ngIf="selectedPresentation.video" type="button" (click)="onSelectSlides()" class="btn btn-default"><span class="mdi mdi-google-drive" aria-hidden="true"></span> Slides</button>
+    <div *ngIf="hasSelectedPresentation" class="btn-group" role="group" aria-label="options">
+      <button *ngIf="!selectedPresentation.slides" disabled type="button" class="btn btn-default"><span class="mdi mdi-google-drive" aria-hidden="true"></span> Slides</button>
+      <button *ngIf="selectedPresentation.slides" type="button" (click)="onSelectSlides()" class="btn btn-default"><span class="mdi mdi-google-drive" aria-hidden="true"></span> Slides</button>
       <button *ngIf="selectedPresentation.video" (click)="onSelectVideo()" type="button" class="btn btn-default"><span class="fa fa-youtube" aria-hidden="true"></span> Video</button>
     </div>
   </div>
   <p></p>
-  <div *ngIf="selectedPresentation">
+  <div *ngIf="hasSelectedPresentation">
     <div class="embed-responsive embed-responsive-4by3">
       <iframe [src]="mediaUrl" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
   </div>
-  <div *ngIf="!selectedPresentation" class="jumbotron">
+  <div *ngIf="!hasSelectedPresentation" class="jumbotron">
     <div class="jumbotron">
       <h1>Select a presentation ;)</h1>
     </div>

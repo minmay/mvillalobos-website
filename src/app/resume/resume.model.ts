@@ -12,6 +12,6 @@ export interface Resume {
     history: Employment[];
     education: EducationEntry[];
     skills: string[];
-    presentations?: Presentation[];
-    affiliations?: Affiliation[];
+    presentations: Presentation[];
+    affiliations: Affiliation[];
 }

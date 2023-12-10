@@ -1,51 +1,42 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
+# Compiled output
 /dist
 /tmp
+/out-tsc
+/bazel-out
 
-# dependencies
+# Node
 /node_modules
-/bower_components
+npm-debug.log
+yarn-error.log
 
 # IDEs and editors
-/.idea
-/.vscode
+.idea/
 .project
 .classpath
+.c9/
 *.launch
 .settings/
+*.sublime-workspace
 
-# misc
-/.sass-cache
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
 /connect.lock
-/coverage/*
+/coverage
 /libpeerconnection.log
-npm-debug.log
 testem.log
 /typings
 
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-#System Files
+# System files
 .DS_Store
 Thumbs.db
-
-# glyphicon licensed artifacts
-src/assets/css/
-src/assets/css/glyphicons-bootstrap.css
-src/assets/css/glyphicons-filetypes.css
-src/assets/css/glyphicons-social.css
-
-src/assets/fonts/glyphicons-filetypes-regular.eot
-src/assets/fonts/glyphicons-filetypes-regular.svg
-src/assets/fonts/glyphicons-filetypes-regular.ttf
-src/assets/fonts/glyphicons-filetypes-regular.woff
-src/assets/fonts/glyphicons-filetypes-regular.woff2
-src/assets/fonts/glyphicons-social-regular.eot
-src/assets/fonts/glyphicons-social-regular.svg
-src/assets/fonts/glyphicons-social-regular.ttf
-src/assets/fonts/glyphicons-social-regular.woff
-src/assets/fonts/glyphicons-social-regular.woff2

@@ -1,26 +1,42 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from '@angular/common/http';
+import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 import { ResumeService } from '../resume.service';
 import { Presentation } from '../presentation.model';
+import {parse} from "yaml";
 
 @Component({
   selector: 'app-presentations',
+  standalone: true,
+  imports: [CommonModule, HttpClientModule],
+  providers: [ResumeService],
   templateUrl: './presentations.component.html',
   styleUrls: ['./presentations.component.css']
 })
 export class PresentationsComponent implements OnInit {
 
-  presentations: Presentation[];
+  presentations: Presentation[] = [];
+  hasSelectedPresentation: boolean = false;
   selectedPresentation: Presentation;
-  mediaUrl: SafeUrl;
-  showSlides: boolean;
-  showVideo: boolean;
+  mediaUrl: SafeResourceUrl;
+  showSlides: boolean = false;
+  showVideo: boolean = false;
 
   constructor (
     private resumeService: ResumeService,
     private sanitizer: DomSanitizer
   ) {
+    this.mediaUrl = sanitizer.bypassSecurityTrustResourceUrl('');
+    this.selectedPresentation = {
+      id: '',
+      name: '',
+      description: '',
+      link: '',
+      slides: '',
+      video: ''
+    };
   }
 
   ngOnInit(): void {
@@ -28,12 +44,12 @@ export class PresentationsComponent implements OnInit {
   }
 
   getPresentations(): void {
-    this.resumeService
-      .findResume()
-      .subscribe(resume => this.presentations = resume.presentations);
+    this.resumeService.loadResume()
+      .subscribe(resume => this.presentations = parse(resume).presentations);
   }
 
   onSelectPresentation(presentation: Presentation): void {
+    this.hasSelectedPresentation = true;
     this.selectedPresentation = presentation;
     this.onSelectSlides();
   }
@@ -45,7 +61,7 @@ export class PresentationsComponent implements OnInit {
   }
 
   onSelectVideo(): void {
-    this.mediaUrl = this.selectedPresentation.video ? this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedPresentation.video) : null;
+    this.mediaUrl = this.selectedPresentation.video ? this.sanitizer.bypassSecurityTrustResourceUrl(this.selectedPresentation.video) : this.sanitizer.bypassSecurityTrustResourceUrl('');
     this.showSlides = false;
     this.showVideo = true;
   }

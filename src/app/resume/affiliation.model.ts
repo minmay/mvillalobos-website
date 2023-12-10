@@ -1,3 +1,5 @@
+import { Description } from "./description.model";
+
 export interface Affiliation {
   id: string;
   name: string;
@@ -6,6 +8,5 @@ export interface Affiliation {
   start: string;
   end: string;
   title: string;
-  prologue: string;
-  accomplishments?: string[];
+  description: Description[];
 }
