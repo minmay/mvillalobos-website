@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from "@angular/common";
-import { HttpClientModule } from '@angular/common/http';
+import {} from '@angular/common/http';
 
 import { ResumeService } from './resume.service';
 import { Resume } from './resume.model';
@@ -11,7 +11,11 @@ import { parse } from "yaml";
 @Component({
   selector: 'app-resume',
   standalone: true,
-  imports: [CommonModule, HttpClientModule, ResumeEntryComponent, PresentationsComponent],
+  imports: [CommonModule, 
+// TODO: `HttpClientModule` should not be imported into a component directly.
+// Please refactor the code to add `provideHttpClient()` call to the provider list in the
+// application bootstrap logic and remove the `HttpClientModule` import from this component.
+HttpClientModule, ResumeEntryComponent, PresentationsComponent],
   providers: [ResumeService],
   templateUrl: './resume.component.html',
   styleUrls: ['./resume.component.css']
