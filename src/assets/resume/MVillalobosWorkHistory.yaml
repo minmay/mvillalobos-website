@@ -70,7 +70,7 @@ history:
       - prologue: Led the transition from a monolithic Ruby on Rails application focusing on subscription and shipping services to a distributed architecture, meticulously assessing key components to address performance and scalability challenges while recommending appropriate technical solutions.
         accomplishments:
           - Engineered and executed database migration scripts, enhancing the production PostgreSQL database with referential integrity, auditing functionality, and data anomaly fixes.
-          - Created and implemented an internal Ruby GEM named \"Badger,\" streamlining the development of high-performing database batch programs. This significantly reduced execution time, cutting it down from 18 hours to an impressive 15 minutes when compared to an ordinary MRI Ruby application.
+          - Created and implemented an internal Ruby GEM named "Badger," streamlining the development of high-performing database batch programs. This significantly reduced execution time, cutting it down from 18 hours to an impressive 15 minutes when compared to an ordinary MRI Ruby application.
           - Led the development of a high-performance, multi-threaded ETL data pipeline, efficiently handling 900,000 records, persisting 7 million database records, and uploading 3.5 million files totaling 73.3 GB in S3. Leveraged JRuby, Java threads, Java Concurrency, JDBC batch, Badger, and AWS for this project.
   - id: overstock
     name: Overstock.com
@@ -109,7 +109,7 @@ history:
     end: Apr 2011
     title: Sr. Software Engineer
     description:
-      - prologue: Facilitated the technology transfer of the Fox Audience Network (FAN) Ad Server during the acquisition by the Rubicon Project. Additionally, led the development of an innovative \"agile\" meta-programming framework, capable of generating RESTful web APIs using SQL queries as input.
+      - prologue: Facilitated the technology transfer of the Fox Audience Network (FAN) Ad Server during the acquisition by the Rubicon Project. Additionally, led the development of an innovative "agile" meta-programming framework, capable of generating RESTful web APIs using SQL queries as input.
   - id: fox-audience-network
     name: Fox Audience Network / NewsCorp
     logo: fan.jpg
