@@ -9,16 +9,15 @@ import { ResumeEntryComponent } from './entry/resume-entry.component';
 import { parse } from "yaml";
 
 @Component({
-  selector: 'app-resume',
-  standalone: true,
-  imports: [CommonModule, 
-// TODO: `HttpClientModule` should not be imported into a component directly.
-// Please refactor the code to add `provideHttpClient()` call to the provider list in the
-// application bootstrap logic and remove the `HttpClientModule` import from this component.
-HttpClientModule, ResumeEntryComponent, PresentationsComponent],
-  providers: [ResumeService],
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.css']
+    selector: 'app-resume',
+    imports: [CommonModule,
+        // TODO: `HttpClientModule` should not be imported into a component directly.
+        // Please refactor the code to add `provideHttpClient()` call to the provider list in the
+        // application bootstrap logic and remove the `HttpClientModule` import from this component.
+        HttpClientModule, ResumeEntryComponent, PresentationsComponent],
+    providers: [ResumeService],
+    templateUrl: './resume.component.html',
+    styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent implements OnInit {
 

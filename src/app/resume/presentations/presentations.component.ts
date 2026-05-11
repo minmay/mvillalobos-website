@@ -8,16 +8,15 @@ import { Presentation } from '../presentation.model';
 import {parse} from "yaml";
 
 @Component({
-  selector: 'app-presentations',
-  standalone: true,
-  imports: [CommonModule, 
-// TODO: `HttpClientModule` should not be imported into a component directly.
-// Please refactor the code to add `provideHttpClient()` call to the provider list in the
-// application bootstrap logic and remove the `HttpClientModule` import from this component.
-HttpClientModule],
-  providers: [ResumeService],
-  templateUrl: './presentations.component.html',
-  styleUrls: ['./presentations.component.css']
+    selector: 'app-presentations',
+    imports: [CommonModule,
+        // TODO: `HttpClientModule` should not be imported into a component directly.
+        // Please refactor the code to add `provideHttpClient()` call to the provider list in the
+        // application bootstrap logic and remove the `HttpClientModule` import from this component.
+        HttpClientModule],
+    providers: [ResumeService],
+    templateUrl: './presentations.component.html',
+    styleUrls: ['./presentations.component.css']
 })
 export class PresentationsComponent implements OnInit {
 
