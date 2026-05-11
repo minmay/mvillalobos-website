@@ -1,10 +1,10 @@
 import { Component, Input } from '@angular/core';
-import {CommonModule} from "@angular/common";
+
 import { ResumeEntry } from './resume-entry.model';
 
 @Component({
     selector: 'app-resume-entry',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './resume-entry.component.html',
     styleUrls: ['./resume-entry.component.css']
 })

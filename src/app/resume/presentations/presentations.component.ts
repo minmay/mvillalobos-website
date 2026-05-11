@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from "@angular/common";
+
 import {} from '@angular/common/http';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
@@ -9,11 +9,7 @@ import {parse} from "yaml";
 
 @Component({
     selector: 'app-presentations',
-    imports: [CommonModule,
-        // TODO: `HttpClientModule` should not be imported into a component directly.
-        // Please refactor the code to add `provideHttpClient()` call to the provider list in the
-        // application bootstrap logic and remove the `HttpClientModule` import from this component.
-        HttpClientModule],
+    imports: [HttpClientModule],
     providers: [ResumeService],
     templateUrl: './presentations.component.html',
     styleUrls: ['./presentations.component.css']
