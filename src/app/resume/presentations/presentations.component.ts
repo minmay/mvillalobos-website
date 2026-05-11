@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import {} from '@angular/common/http';
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 import { ResumeService } from '../resume.service';
@@ -9,7 +8,7 @@ import {parse} from "yaml";
 
 @Component({
     selector: 'app-presentations',
-    imports: [HttpClientModule],
+    imports: [],
     providers: [ResumeService],
     templateUrl: './presentations.component.html',
     styleUrls: ['./presentations.component.css']
