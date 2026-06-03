@@ -1,0 +1,18 @@
+[project]
+name = "resume-generator"
+version = "0.1.0"
+description = "Generate Word resume from YAML data"
+authors = [
+    { name = "Marco A. Villalobos" }
+]
+dependencies = [
+    "python-docx>=0.8.11",
+    "PyYAML>=6.0.1",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+generate-resume = "generate_resume:main"
