@@ -1,95 +1,91 @@
-<div class="container" *ngIf="resume">
-  <div class="page-header">
-    <h1 id="resume">{{resume.name}}
-      <small>Resume</small>
-    </h1>
-  </div>
-  <div class="row">
-    <div class="col-md-9">
-      <dl class="dl-horizontal">
-        <dt id="email">Email</dt>
-        <dd><a href="mailto:{{resume.email}}">{{resume.email}}</a>
-
+@if (resume) {
+  <div class="container">
+    <div class="page-header">
+      <h1 id="resume">{{resume.name}}
+        <small>Resume</small>
+      </h1>
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <dl class="dl-horizontal">
+          <dt id="email">Email</dt>
+          <dd><a href="mailto:{{resume.email}}">{{resume.email}}</a>
           <p></p></dd>
-
-        <ng-template [ngIf]="resume.introduction">
-          <dt id="introduction">Introduction</dt>
-          <dd><p>{{resume.introduction}}</p></dd>
-        </ng-template>
-
-        <ng-template [ngIf]="resume.objective">
-          <dt id="objective">Objective</dt>
-          <dd><p *ngFor="let objective of resume.objective">{{objective}}</p></dd>
-        </ng-template>
-
-        <dt id="work-history">Work History</dt>
-        <dd>
-          <table class="table">
-            <ng-template ngFor let-experience [ngForOf]="resume.history">
-              <app-resume-entry id="{{experience.id}}" [entry]="experience"></app-resume-entry>
-            </ng-template>
-          </table>
-        </dd>
-
-        <dt id="education">Education</dt>
-        <dd>
-          <table class="table">
-            <ng-template ngFor let-school [ngForOf]="resume.education">
-              <tr *ngIf="school.logo">
-                <td colspan="3"><img class="education-img" src="assets/resume/images/{{school.logo}}" border="0"/>
-
-                  <p></p></td>
-              </tr>
-              <tr>
-                <td>{{school.start}} - {{school.end}}</td>
-                <td>{{school.name}}</td>
-                <td>{{school.degree}}</td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                  <hr/>
-                </td>
-              </tr>
-            </ng-template>
-          </table>
-        </dd>
-
-        <dt id="skills">Skills</dt>
-        <dd>
-          <ng-template ngFor let-skill [ngForOf]="resume.skills">
-            <p>{{skill}}</p>
-          </ng-template>
-          <hr/>
-        </dd>
-
-        <dt id="presentations">Presentations</dt>
-        <dd>
-          <ng-template ngFor let-presentation [ngForOf]="resume.presentations">
-            <p><a href="{{presentation.link}}" target="_blank">{{presentation.name}}</a></p>
-          </ng-template>
-        </dd>
-
-        <dt id="affiliations">Affiliations</dt>
-        <dd>
-          <table class="table">
-            <ng-template ngFor let-affiliation [ngForOf]="resume.affiliations">
-              <app-resume-entry [entry]="affiliation"></app-resume-entry>
-            </ng-template>
-          </table>
-        </dd>
-      </dl>
-    </div>
-    <div class="col-md-3">
-      <div class="hidden-print"><p>Resume also available in following formats:</p>
-        <span class="mdi mdi-file-word"></span><a href="assets/resume/MVillalobosWorkHistory.docx">
-          Microsoft Word</a><br>
+          @if (resume.introduction) {
+            <dt id="introduction">Introduction</dt>
+            <dd><p>{{resume.introduction}}</p></dd>
+          }
+          @if (resume.objective) {
+            <dt id="objective">Objective</dt>
+            <dd>@for (objective of resume.objective; track objective) {
+              <p>{{objective}}</p>
+            }</dd>
+          }
+          <dt id="work-history">Work History</dt>
+          <dd>
+            <table class="table">
+              @for (experience of resume.history; track experience) {
+                <app-resume-entry id="{{experience.id}}" [entry]="experience"></app-resume-entry>
+              }
+            </table>
+          </dd>
+          <dt id="education">Education</dt>
+          <dd>
+            <table class="table">
+              @for (school of resume.education; track school) {
+                @if (school.logo) {
+                  <tr>
+                    <td colspan="3"><img class="education-img" src="assets/resume/images/{{school.logo}}" border="0"/>
+                      <p></p></td>
+                    </tr>
+                  }
+                  <tr>
+                    <td>{{school.start}} - {{school.end}}</td>
+                    <td>{{school.name}}</td>
+                    <td>{{school.degree}}</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      <hr/>
+                    </td>
+                  </tr>
+                }
+              </table>
+            </dd>
+            <dt id="skills">Skills</dt>
+            <dd>
+              @for (skill of resume.skills; track skill) {
+                <p>{{skill}}</p>
+              }
+              <hr/>
+            </dd>
+            <dt id="presentations">Presentations</dt>
+            <dd>
+              @for (presentation of resume.presentations; track presentation) {
+                <p><a href="{{presentation.link}}" target="_blank">{{presentation.name}}</a></p>
+              }
+            </dd>
+            <dt id="affiliations">Affiliations</dt>
+            <dd>
+              <table class="table">
+                @for (affiliation of resume.affiliations; track affiliation) {
+                  <app-resume-entry [entry]="affiliation"></app-resume-entry>
+                }
+              </table>
+            </dd>
+          </dl>
+        </div>
+        <div class="col-md-3">
+          <div class="hidden-print"><p>Resume also available in following formats:</p>
+          <span class="mdi mdi-file-word"></span><a href="assets/resume/MVillalobosWorkHistory.docx">
+        Microsoft Word</a><br>
         <span class="mdi mdi-file-pdf"></span><a href="assets/resume/MVillalobosWorkHistory.pdf">
-          PDF</a><br>
-        <span class="mdi mdi-json"></span><a href="assets/resume/MVillalobosWorkHistory.yaml">
-          YAML</a></div>
-
-    </div>
+      PDF</a><br>
+      <span class="mdi mdi-json"></span><a href="assets/resume/MVillalobosWorkHistory.yaml">
+    YAML</a></div>
   </div>
 </div>
+</div>
+}
 
 

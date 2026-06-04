@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Terraform
+/terraform/.terraform/
+/terraform/terraform.tfstate.backup
+/terraform/terraform.tfstate
+/terraform/.terraform.lock.hcl
+

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from "@angular/common";
-import { HttpClientModule } from '@angular/common/http';
+
 import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
 
 import { ResumeService } from '../resume.service';
@@ -8,12 +7,11 @@ import { Presentation } from '../presentation.model';
 import {parse} from "yaml";
 
 @Component({
-  selector: 'app-presentations',
-  standalone: true,
-  imports: [CommonModule, HttpClientModule],
-  providers: [ResumeService],
-  templateUrl: './presentations.component.html',
-  styleUrls: ['./presentations.component.css']
+    selector: 'app-presentations',
+    imports: [],
+    providers: [ResumeService],
+    templateUrl: './presentations.component.html',
+    styleUrls: ['./presentations.component.css']
 })
 export class PresentationsComponent implements OnInit {
 
