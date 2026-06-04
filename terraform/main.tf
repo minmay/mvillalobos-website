@@ -7,42 +7,21 @@ resource "aws_s3_bucket" "website_bucket" {
   bucket = var.domain_name
 }
 
-resource "aws_s3_bucket_website_configuration" "website_config" {
-  bucket = aws_s3_bucket.website_bucket.id
-
-  index_document {
-    suffix = "index.html"
-  }
-
-  error_document {
-    key = "index.html"
-  }
-}
-
 resource "aws_s3_bucket_public_access_block" "public_access" {
   bucket = aws_s3_bucket.website_bucket.id
 
-  block_public_acls       = false
-  block_public_policy     = false
-  ignore_public_acls      = false
-  restrict_public_buckets = false
+  block_public_acls       = true
+  block_public_policy     = true
+  ignore_public_acls      = true
+  restrict_public_buckets = true
 }
 
-resource "aws_s3_bucket_policy" "public_read" {
-  bucket = aws_s3_bucket.website_bucket.id
-  policy = jsonencode({
-    Version = "2012-10-17"
-    Statement = [
-      {
-        Sid       = "PublicReadGetObject"
-        Effect    = "Allow"
-        Principal = "*"
-        Action    = "s3:GetObject"
-        Resource  = "${aws_s3_bucket.website_bucket.arn}/*"
-      },
-    ]
-  })
-  depends_on = [aws_s3_bucket_public_access_block.public_access]
+resource "aws_cloudfront_origin_access_control" "website" {
+  name                              = "${var.domain_name}-oac"
+  description                       = "OAC for ${var.domain_name} static site"
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
 }
 
 # --- ACM Certificate ---
@@ -78,40 +57,31 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   aliases             = [var.domain_name]
 
   origin {
-    domain_name = aws_s3_bucket_website_configuration.website_config.website_domain
-    origin_id   = "S3-Website"
-
-    custom_origin_config {
-      http_port              = 80
-      https_port             = 443
-      origin_protocol_policy = "http-only"
-      origin_ssl_protocols   = ["TLSv1.2"]
-    }
+    domain_name              = aws_s3_bucket.website_bucket.bucket_regional_domain_name
+    origin_id                = "S3-${aws_s3_bucket.website_bucket.id}"
+    origin_access_control_id = aws_cloudfront_origin_access_control.website.id
   }
 
   default_cache_behavior {
-    target_origin_id       = "S3-Website"
+    target_origin_id       = "S3-${aws_s3_bucket.website_bucket.id}"
     viewer_protocol_policy = "redirect-to-https"
     allowed_methods        = ["GET", "HEAD", "OPTIONS"]
     cached_methods         = ["GET", "HEAD"]
+    compress               = true
 
-    forwarded_values {
-      query_string = false
-      cookies {
-        forward = "none"
-      }
-    }
+    # AWS managed CachingOptimized policy (respects origin Cache-Control headers)
+    cache_policy_id = "658327ea-f89d-4fab-a63d-7e88639e58f6"
   }
 
   custom_error_response {
-    error_code = 403
-    response_code = "200"
+    error_code         = 403
+    response_code      = 200
     response_page_path = "/index.html"
   }
 
   custom_error_response {
-    error_code = 404
-    response_code = "200"
+    error_code         = 404
+    response_code      = 200
     response_page_path = "/index.html"
   }
 
@@ -126,6 +96,31 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
       restriction_type = "none"
     }
   }
+}
+
+resource "aws_s3_bucket_policy" "cloudfront_read" {
+  bucket = aws_s3_bucket.website_bucket.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid    = "AllowCloudFrontServicePrincipal"
+        Effect = "Allow"
+        Principal = {
+          Service = "cloudfront.amazonaws.com"
+        }
+        Action   = "s3:GetObject"
+        Resource = "${aws_s3_bucket.website_bucket.arn}/*"
+        Condition = {
+          StringEquals = {
+            "AWS:SourceArn" = aws_cloudfront_distribution.s3_distribution.arn
+          }
+        }
+      },
+    ]
+  })
+
+  depends_on = [aws_s3_bucket_public_access_block.public_access]
 }
 
 # --- Route 53 Record for Site ---
