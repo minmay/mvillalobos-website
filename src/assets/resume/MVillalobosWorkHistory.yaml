@@ -448,24 +448,22 @@ education:
     degree: Associates of Arts
 
 skills:
-  - Java, Kotlin, JEE, J2EE, EJB, JDBC, JPA, and JAAS.
-  - Apache Flink, Apache Flink Stateful Function, Stream Programming, Kappa Architecture, Parquet, Influx Db.
-  - Servlet, JSP, JSF, JAX-RS, and JAX-WS.
-  - Web Services, REST, SOAP, Oauth 2, and JSON.
+  - Java, JEE, J2EE, EJB, JDBC, JPA, Web Services, Servlet, JSP, JSF, JAX-RS, JAX-WS, REST, SOAP, OAuth 2, JSON and JAAS.
+  - Apache Flink, Apache Flink Stateful Function, Stream Programming, Data Architecture, Kappa Architecture, Lakehouse Architecture, Parquet, Apache Paimon, Apache Iceberg, Apache Spark, Apache Flink CDC, Flink Kubernetes Operator, Apache Kafka, Strimzi Kafka Operator, and Debezium.
+  - AI, LLM, Context Engineering, Cursor, Claude Code, Cline, GitHub Co-Pilot, Skills, MCP Server, Ollama, Hugging Face, and Web UI.
   - The Spring Framework, Spring Boot, Spring MVC, Spring Security, Inversion of Control, Dependency Injection, and AOP.
   - Network Programming, Socket Programming, NIO, Netty, and Protocol Buffers.
-  - RDBMS, PostgreSQL, Oracle, DB2, Microsoft SQL Server, MySql, SQLite, H2, and SQL.
-  - NoSQL, Phoenix, HBase, Cassandra, DynamoDB, Hadoop, Map Reduce, and Lucene.
-  - Concurrency Programming, Thread-Safety, and Java Util Concurrent.
-  - Kubernetes, Docker, Docker Compose, Amazon EKS.
-  - Cloud Computing, Distributed Computing, and EC2.
-  - Python, Flask, SQL Alchemy, Authlib, PyEnv, and Virtual Env.
+  - SQL, RDBMS, PostgreSQL, Oracle, DB2, Microsoft SQL Server, MySql, SQLite, H2, Liquibase, Flyway, ACID, Normalization, Third Normal Form (3NF).
+  - NoSQL, Mongo DB Atlas, Influx DB, Elastic Search, Lucene, Phoenix, HBase, Cassandra, DynamoDB, Hadoop, and Map Reduce.
+  - Concurrency programming, Multi-threaded programming, Thread-safety, and Java Util Concurrent
+  - Kubernetes, MiniKube, Containers, Docker, Docker Compose, and Terraform.
+  - AWS, Cloud Computing, Distributed Computing, EC2, ECS, EKS, EMR, and LocalStack.
+  - Python, Flask, SQL Alchemy, Authlib, UV, PyEnv, and Virtual Env.
   - Ruby, JRuby, and Ruby on Rails.
-  - JavaScript, ECMAScript, Angular, TypeScript, and JQuery.
-  - CSS, and Bootstrap.
+  - Angular, NextJS, React, TypeScript, JavaScript, ECMAScript, JQuery, Tailwind, CSS, and Bootstrap.
   - Linux, Open LDAP, Bash, Awk, and sometimes PERL.
-  - Version Control, Git, Subversion, and CVS.
-  - Package Management, Maven, Gradle, NPM, and Bundler.
+  - Version Control, Git, GitHub, GitHub Actions, GitLab, Bitbucket, Subversion, and CVS.
+  - Package Management, Maven, Gradle, PIP, NPM, and Bundler.
   - Software Architecture, Attribute Driven Design 3.0, UML, Quality Attributes, Architecture Patterns, Architecture Tactics, and Software Engineering.
   - Agile, Scrum, Use Cases, and Stories.
   - Verbal, written, and group presentations.
