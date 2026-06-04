@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
-
 
 jobs:
   deploy:
@@ -37,18 +35,18 @@ jobs:
       - name: Deploy to S3
         run: |
           # Sync all assets with long cache (1 year)
-          # Note: Angular build puts files in dist/mvillalobos-website/browser (for newer versions) 
+          # Note: Angular build puts files in dist/mvillalobos-website/browser (for newer versions)
           # or dist/mvillalobos-website. Checking angular.json: outputPath is dist/mvillalobos-website.
           # However, newer Angular versions (Application builder) often add a /browser subfolder.
           # Let's check the actual build output directory if it exists.
-          
+
           BUILD_DIR="dist/mvillalobos-website"
           if [ -d "$BUILD_DIR/browser" ]; then
             BUILD_DIR="$BUILD_DIR/browser"
           fi
-          
+
           echo "Uploading from $BUILD_DIR"
-          
+
           # 1. Upload everything except index.html with long cache
           aws s3 sync $BUILD_DIR s3://mvillalobos.kineteque.com \
             --delete \
